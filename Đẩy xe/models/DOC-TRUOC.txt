@@ -1,0 +1,14 @@
+MODEL 3D CHO ĐẨY XE 2 PHE (game tự nạp mọi file .glb trong thư mục này; thiếu file nào thì dùng bản dựng bằng code)
+
+Dựng lại bằng công cụ trong "Game tu tiên\tutien\tools" (chạy trong thư mục tutien):
+  node tools/make-dayxe-car.ts     → xe-do.glb, xe-xanh.glb (xe rally thể thao, thân quét mặt cắt, kính, đèn LED, bánh wheel_0..3)
+  node tools/make-dayxe-crew.ts    → tho-do-1..3.glb, tho-xanh-1..3.glb (người đẩy đồ đua màu phe, Rocketbox MIT;
+                                     động tác idle / push / run / kick / fly / cheer)
+  node tools/make-dayxe-pets.ts    → tho-vang, dai-bang, rong-con, phuong-hoang, rong-vang, su-tu (linh vật có xương + động tác:
+                                     rồng bay uốn thân vẫy đuôi, chim vỗ cánh, thú chạy / gầm)
+  node tools/make-dayxe-planes.ts  → may-bay-mini, phi-co-lon, sieu-phan-luc (cánh quạt / quạt động cơ quay, lửa đốt sau, clip "fly")
+  node tools/make-dayxe-fx.ts      → fx-gio, fx-lua, fx-phap-tran, fx-cot-sang, fx-hao-quang, fx-song (hiệu ứng quà có animation)
+  node tools/make-dayxe-props.ts   → dx-thanh.glb (thành trì, mái roof_team đổi màu theo phe; vân CC0 Poly Haven)
+                                     (công cụ này cũng tạo xe kiểu cũ: chạy make-dayxe-car.ts SAU nó để giữ xe mới)
+Lấy từ Tu Tiên: thuongcothanlong.glb (Thần Long 199 xu), chutuoc.glb (Phượng Hoàng Lửa 299 xu),
+tg-da-*.glb (đá), tg-bui-*.glb (bụi cây) trang trí ven đường.

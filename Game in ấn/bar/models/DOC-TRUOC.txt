@@ -1,0 +1,24 @@
+MODEL 3D CHO LIVE PRINT STUDIO
+
+Máy in, phòng trưng bày đều đã dựng sẵn bằng code, KHÔNG cần file nào cũng chạy đủ.
+Muốn thay bằng model của bạn: thả file .glb vào thư mục này rồi tải lại trang (không cần mở lại server).
+?nomodel trên đường dẫn để tạm tắt mọi file .glb.
+
+TÊN FILE
+  may-in.glb  (hoặc printer.glb)     thân máy in thay cho thân dựng sẵn. Game tự canh đáy, thu phóng cho vừa chỗ đặt máy.
+  trang-tri-*.glb (hoặc decor-*.glb) đồ trang trí đặt quanh phòng trưng bày (tối đa 8 file)
+
+ĐIỀU KHIỂN CÁC BỘ PHẬN TRONG may-in.glb (đặt tên nút trong Blender, không phân biệt hoa thường)
+  Gantry     giàn in chạy dọc bàn in (trục z)              Head      đầu in chạy ngang (trục x)
+  Roller*    các trục lăn quay theo giấy (quay quanh x)    Gear*     bánh răng quay theo trục lăn
+  Cutter     dao cắt chạy ngang (trục x)                   Roll      cuộn giấy quay khi kéo giấy
+  File có nút nào thì phần dựng sẵn tương ứng được ẩn đi; thiếu nút nào thì phần đó dùng bản dựng sẵn.
+  Giấy in, bản in, hiệu ứng luôn do game vẽ (để ảnh avatar, tên TikTok hiện dần theo đầu in).
+
+FILE CẦN GÌ
+  - Vật liệu PBR (Principled BSDF): màu, độ nhám, kim loại, normal map. Ảnh tối đa 2048x2048.
+  - Mỗi file dưới khoảng 20 MB, nên dưới 150.000 tam giác cho máy in.
+  - Mỗi file chỉ tải một lần, giữ trong bộ nhớ; các bản sao dùng chung hình khối và ảnh.
+
+Các file khach-*.glb, bao-ve.glb (nhân vật của Quán Bar cũ) không còn dùng, có thể xoá cho nhẹ.
+File .glb trong thư mục này không được đưa lên git.

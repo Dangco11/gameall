@@ -1,0 +1,33 @@
+MODEL 3D CỦA TU TIÊN ĐẠI CHIẾN
+
+ĐÃ CÓ SẴN (dựng lại bằng: npm run models)
+  tusi-nam-1..6.glb, tusi-nu-1..5.glb   tu sĩ người thật (Microsoft Rocketbox, giấy phép MIT, xem LICENSE-Rocketbox.txt)
+      + đồ tiên hiệp may theo khung xương: áo giao lĩnh, xiêm dưới chia vạt theo chân, tay áo rộng rủ, đai lưng, viền,
+        búi tóc + trâm (nữ thêm tóc dài), áo choàng ở một số mẫu
+      + 8 động tác nướng sẵn: idle (thủ thế), meditate (ngồi thiền xếp bằng), run, attack (chém), cast (đẩy chưởng),
+        hit, die (gục), victory
+      Màu áo, vũ khí, sừng / tai / vòng sáng theo lớp và đồ VIP (mũ miện, giáp vai, cánh) do game gắn khi chạy,
+      nên 11 file này dùng cho cả 30 mẫu tu sĩ. Boss ma thần hình người (Ma Tôn, Thiên Ma...) cũng dùng các file này, phóng to.
+  haclong, thuongcothanlong, bachho, kylan, thaothiet, hondoncuthu, cuuvihi, huyenvu, kimsidaibang, chutuoc .glb
+      Boss yêu quái: khung xương, thân liền mạch bọc da (vảy, vằn hổ, lông, mai rùa, lông vũ tự tạo),
+      động tác idle, fly/run/walk, attack, roar, cast, hit, rage, die. Dựng bằng tools/make-bosses.ts.
+  tg-kien-truc.glb    võ đài bát giác + 8 cột rồng ngọc, điện chính 3 tầng, lầu bên, tháp 7 tầng, cổng Thiên Môn
+                      (vân mái ngói / vữa / gỗ / đá của Poly Haven, CC0). Dựng bằng tools/make-world.ts.
+  tg-da-1..3.glb, tg-bui-1..3.glb   đá tảng, bụi cây quét 3D của Poly Haven (CC0)
+
+THAY BẰNG MODEL KHÁC
+  - Tu sĩ riêng cho một lớp: <lớp>.glb hoặc <lớp>_nu.glb (kiemtu, daotu, phapsu, matu, tiennu, longtoc, yeutoc, thetu,
+    tranphap, luyendan, kiemtien, mavuong, thienton, loitu, banghoa). Có file này thì lớp đó dùng nó thay cho tusi-*.glb.
+  - Boss: ghi đè <khoá boss>.glb. Boss ma thần: thêm maton.glb, thienma.glb, huyetma.glb, thienloithan.glb, cuuthienhuyennu.glb.
+  - Tên động tác trong file (không phân biệt hoa thường): idle/stand · run/walk/fly · attack/slash · cast/spell · hit/damage
+    · die/death · meditate/sit · victory/win · roar · rage.
+  - Vật liệu tên robe_main / robe_inner / robe_trim / hair_extra sẽ được game đổi màu theo lớp.
+  - Xoá file thì game tự quay về bản dựng bằng code.
+  - Chỉ dùng model bạn có quyền dùng trên live.
+
+THỬ NHANH
+  ?preview=1 (30 tu sĩ, &pose=0..5, &vip=1 xem 6 bậc VIP) · ?preview=boss&i=0..14
+  ?models=tusi-nam-1,haclong  chỉ nạp các file này · ?debug  hiện tiến độ nạp và lỗi trên màn hình · ?nomodel  tắt hết model
+
+DỰNG LẠI (cần các thư mục game khác trong bộ để lấy người Rocketbox và vân Poly Haven)
+  npm run models               tất cả     npm run models:characters / models:bosses / models:world   từng phần

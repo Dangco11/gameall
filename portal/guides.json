@@ -1,0 +1,597 @@
+{
+ "dua-may-bay": {
+  "intro": "Cuộc đua máy bay 3D: người xem vào đua bằng bình luận, tặng quà để dùng skill vượt đối thủ. Một vòng đua khoảng 7–8 phút, về nhất là vô địch.",
+  "viewers": [
+   [
+    "Gõ 1 (hoặc \"vào\", \"bay\")",
+    "Vào đua. Thả tim hoặc follow kênh cũng tự vào đua"
+   ],
+   [
+    "Gõ \"xem\"",
+    "Máy quay soi máy bay của mình 7 giây"
+   ],
+   [
+    "Gõ tên máy bay: dua, tiemkich, chokhach, canhquat, sieuthanh, tunhan, vantai, nhaolon, tuonglai",
+    "Đổi mẫu máy bay"
+   ],
+   [
+    "Gõ màu: đỏ, cam, vàng, xanh, tím, hồng, trắng, đen, bạc",
+    "Đổi màu sơn"
+   ],
+   [
+    "Thả tim",
+    "20 tim = tăng tốc 3 giây"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "💨 Tăng tốc nhẹ 3 giây"
+   ],
+   [
+    "5",
+    "⚙️ Tăng tốc động cơ"
+   ],
+   [
+    "10",
+    "🔥 Boost, lửa phản lực"
+   ],
+   [
+    "20",
+    "🎯 Bắn tên lửa máy bay phía trước"
+   ],
+   [
+    "30",
+    "⚡ Sét đánh chậm Top 3"
+   ],
+   [
+    "50",
+    "🚀 Gắn tên lửa đẩy"
+   ],
+   [
+    "99",
+    "🌟 Siêu Boost kèm khiên"
+   ],
+   [
+    "199",
+    "💣 Ném bom người dẫn đầu"
+   ],
+   [
+    "299",
+    "🛩️ Chế độ phản lực 10 giây"
+   ],
+   [
+    "500",
+    "☄️ Mưa thiên thạch"
+   ],
+   [
+    "999",
+    "👑 Máy bay VIP mạ vàng, phi đội hộ tống"
+   ]
+  ],
+  "tips": [
+   "Chưa có người xem nào vào đua thì cuộc đua chưa xuất phát.",
+   "Quà tặng lúc chưa xuất phát được cất kho, xuất phát là bung ra."
+  ]
+ },
+ "quan-bar": {
+  "intro": "Hộp đêm 3D: mỗi người xem bình luận là bước vào quán, ra sàn quẩy. Tặng quà mở màn diễn theo mức xu, càng nhiều xu càng VIP.",
+  "viewers": [
+   [
+    "Bình luận bất kỳ, thả tim, follow",
+    "Vào quán, ra sàn nhảy"
+   ],
+   [
+    "Gõ \"nam\" / \"nữ\"",
+    "Đổi nhân vật"
+   ],
+   [
+    "Gõ \"nhảy 12\", \"nhảy floss\", \"nhảy edm\"",
+    "Chọn điệu nhảy (100 điệu)"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "Múa một điệu, máy quay vào người tặng"
+   ],
+   [
+    "5",
+    "Điệu sung, đèn rọi theo người"
+   ],
+   [
+    "10",
+    "Đồ dạ tiệc lấp lánh"
+   ],
+   [
+    "20",
+    "Quạt laser xanh"
+   ],
+   [
+    "30",
+    "Skill VIP múa đủ kiểu, pháo giấy"
+   ],
+   [
+    "50",
+    "Sân khấu đổi màu theo nhịp"
+   ],
+   [
+    "99",
+    "Đối đầu nhảy với top quà tháng"
+   ],
+   [
+    "199",
+    "Phun CO2, pháo lạnh"
+   ],
+   [
+    "299",
+    "Tên lên màn LED, pháo hoa"
+   ],
+   [
+    "500",
+    "DJ SHOW 60 giây cả quán nhảy"
+   ]
+  ],
+  "tips": [
+   "Tổng xu từ 100 là khách VIP: đổi bộ đồ vàng.",
+   "Cấp người chơi tính theo tổng xu qua mọi buổi live."
+  ]
+ },
+ "in-an": {
+  "intro": "Máy in 3D trên LIVE: mỗi món quà là một bản in mang tên và ảnh của người tặng, quà càng lớn khung in càng hiếm.",
+  "viewers": [
+   [
+    "Bình luận bất kỳ, thả tim",
+    "Vào xưởng in"
+   ],
+   [
+    "Tặng quà",
+    "Máy in chạy bản in cá nhân hoá theo mức xu"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "🖨️ Ảnh in (Thường)"
+   ],
+   [
+    "10",
+    "🥈 Khung bạc (Hiếm)"
+   ],
+   [
+    "50",
+    "🥇 Khung vàng khổ lớn (Quý)"
+   ],
+   [
+    "200",
+    "💎 Khung kim cương VIP (Sử thi)"
+   ],
+   [
+    "500",
+    "🐉 Huyền thoại: máy in chế độ đặc biệt"
+   ],
+   [
+    "1000",
+    "👑 Bản in VIP giới hạn có số"
+   ]
+  ],
+  "tips": [
+   "Cấp người chơi tính theo tổng xu qua mọi buổi live, buổi sau vào vẫn giữ cấp."
+  ]
+ },
+ "pk-co-dau-chu-re": {
+  "intro": "PK hai nhà trên sân cưới làng quê: người xem chọn phe Nhà Trai hoặc Nhà Gái, tặng quà là triệu hồi quân mang tên mình, hai nhà tự đánh nhau trên ba làn.",
+  "viewers": [
+   [
+    "Gõ 1 (hoặc \"nhà trai\")",
+    "Vào phe Nhà Trai"
+   ],
+   [
+    "Gõ 2 (hoặc \"nhà gái\")",
+    "Vào phe Nhà Gái"
+   ],
+   [
+    "Tặng quà khi chưa chọn phe",
+    "Được chia vào phe đang ít xu hơn"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "5 🥢 Dân binh"
+   ],
+   [
+    "5",
+    "5 🏹 Xạ thủ"
+   ],
+   [
+    "10",
+    "3 🛡️ Đấu sĩ"
+   ],
+   [
+    "30",
+    "3 🚜 Xe chiến"
+   ],
+   [
+    "100",
+    "3 🐃 Kỵ binh trâu"
+   ],
+   [
+    "500",
+    "2 🐘 Tượng binh voi (boss)"
+   ]
+  ],
+  "tips": [
+   "Loại quân tính theo giá MỘT món quà: 10 bông hồng 1 xu là 50 Dân binh.",
+   "Mỗi trận gồm tập hợp 30 giây rồi giao chiến."
+  ]
+ },
+ "dam-cuoi": {
+  "intro": "Đám cưới làng quê 3D: người xem bình luận là vào làng dự cưới, tặng quà để mừng cưới, may áo, xây nhà và mở hội cả làng.",
+  "viewers": [
+   [
+    "Bình luận bất kỳ",
+    "Vào làng dự đám cưới"
+   ],
+   [
+    "Gõ \"ĐỔI ÁO\"",
+    "Đổi màu áo"
+   ],
+   [
+    "Thả tim, chia sẻ",
+    "Góp điểm cho làng"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "💧 Mưa rào"
+   ],
+   [
+    "5",
+    "🌱 Phân bón"
+   ],
+   [
+    "10",
+    "👕 Áo bà ba, áo dài"
+   ],
+   [
+    "30",
+    "🌈 Được mùa, cầu vồng"
+   ],
+   [
+    "50",
+    "🧱 Xe gỗ gạch"
+   ],
+   [
+    "100",
+    "🔨 Thợ về làng"
+   ],
+   [
+    "199",
+    "🏠 Nâng nhà 1 cấp"
+   ],
+   [
+    "299",
+    "👘 Áo quý"
+   ],
+   [
+    "500",
+    "🏮 Mở hội cả làng, pháo hoa"
+   ],
+   [
+    "1000",
+    "👑 Đại gia làng"
+   ]
+  ],
+  "tips": [
+   "Quà combo được cộng dồn số xu."
+  ]
+ },
+ "tra-sua": {
+  "intro": "Quán trà sữa 3D: người xem bình luận là thành khách, tự tìm bàn theo cấp VIP. Tặng quà là gọi món: barista pha, phục vụ bưng tới đúng bàn.",
+  "viewers": [
+   [
+    "Bình luận, thả tim hoặc tặng quà",
+    "Thành khách, vào quán ngồi theo cấp"
+   ],
+   [
+    "Gõ \"bàn 5\"",
+    "Sang ngồi bàn số 5 cùng bạn"
+   ],
+   [
+    "Gõ \"nam\", \"nữ\", \"già\", \"trẻ\"",
+    "Đổi dáng nhân vật"
+   ],
+   [
+    "Gõ \"gọi 12\" hoặc \"gọi trà sữa matcha\"",
+    "Chọn món cho lần tặng quà kế tiếp"
+   ]
+  ],
+  "gifts": [
+   [
+    "Theo tổng xu",
+    "Gọi món theo giá: quà càng lớn món càng xịn, máy quay chiếu bàn của khách"
+   ]
+  ],
+  "tips": [
+   "Mỗi xu là 1 điểm VIP, bảng Top 10 tháng hiện bên trái màn hình.",
+   "Màn hình LIVE có nút \"Bấm để bật tiếng\": bấm một lần."
+  ]
+ },
+ "quan-nhau": {
+  "intro": "Quán hải sản đêm: người xem bình luận là được mời vào bàn, tặng quà là gọi món, giọng tiếp viên đọc tên cảm ơn.",
+  "viewers": [
+   [
+    "Bình luận bất kỳ",
+    "Được mời vào bàn"
+   ],
+   [
+    "Thả tim",
+    "Tim bay trên đầu nhân vật"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "Bia lạnh"
+   ],
+   [
+    "5",
+    "Mực khô xé sợi"
+   ],
+   [
+    "20",
+    "Ốc len xào dừa"
+   ],
+   [
+    "50",
+    "Sò lông nướng mỡ hành"
+   ],
+   [
+    "100",
+    "Cả quán cùng zô"
+   ],
+   [
+    "200",
+    "Bạch tuộc nướng than, mời vào bàn VIP"
+   ],
+   [
+    "300",
+    "Tiếp viên hát rót bia"
+   ],
+   [
+    "1000",
+    "Tôm hùm xanh hấp bia"
+   ],
+   [
+    "2000",
+    "Tháp hải sản hai tầng"
+   ],
+   [
+    "5000",
+    "Cua Hoàng Đế dát vàng"
+   ],
+   [
+    "10000",
+    "Đại Tiệc Đế Vương Đại Dương"
+   ]
+  ],
+  "tips": [
+   "Màn hình LIVE cần bấm \"Bật âm thanh\" một lần để có giọng đọc."
+  ]
+ },
+ "tu-tien": {
+  "intro": "Mỗi người xem là một tu sĩ có nhân vật 3D, cảnh giới, pháp bảo và tông môn riêng. Thế giới tự luân phiên: Tu luyện → Boss thế giới → PK 1vs1 → PK 3vs3 → Đoạt bảo → Tông môn đại chiến. Hồ sơ tu sĩ được lưu lại, buổi live sau vào vẫn giữ cảnh giới.",
+  "viewers": [
+   [
+    "Gõ 1",
+    "Bước vào tiên giới, tự tu luyện mỗi giây"
+   ],
+   [
+    "Gõ tên lớp: kiem, dao, phap, ma, tien nu, long, yeu, the tu, tran, dan, kiem tien, ma vuong, thien ton, loi, bang",
+    "Đổi lớp tu sĩ (cách đánh, vũ khí, kỹ năng)"
+   ],
+   [
+    "Gõ nam / nu",
+    "Đổi giới tính nhân vật"
+   ],
+   [
+    "Gõ tong 1 / tong 2 / tong 3 / tong 4",
+    "Gia nhập Thiên Kiếm Tông, Huyết Ma Điện, Thủy Long Cung, Phượng Hỏa Các"
+   ],
+   [
+    "Gõ pk",
+    "Xin thách đấu, vào hàng chờ PK"
+   ],
+   [
+    "Gõ doat (khi Bảo Vật xuất thế)",
+    "Tranh đoạt pháp bảo"
+   ],
+   [
+    "Thả tim, follow, chia sẻ",
+    "Cộng tu vi"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "✨ Linh Khí: tu luyện nhanh"
+   ],
+   [
+    "5",
+    "🌀 Kiếm Khí · nâng Phi Kiếm"
+   ],
+   [
+    "10",
+    "🗡️ Phi Kiếm · nâng Thanh Long Kiếm"
+   ],
+   [
+    "30",
+    "💊 Linh Đan: hồi máu · nâng Thần Đỉnh"
+   ],
+   [
+    "50",
+    "⚔️ Kiếm Trận diện rộng · nâng Huyết Ma Đao"
+   ],
+   [
+    "99",
+    "🐲 Hỏa Long · nâng Long Châu"
+   ],
+   [
+    "199",
+    "⚡ Thiên Lôi Giáng Thế · nâng Kim Chung"
+   ],
+   [
+    "299",
+    "🗼 Càn Khôn Tháp"
+   ],
+   [
+    "500",
+    "🦅 Triệu hồi Phượng Hoàng · nâng Phượng Hoàng Trượng"
+   ],
+   [
+    "999",
+    "🌟 Vạn Kiếm Quy Tông khắp trời · nâng Bảo Liên Đăng"
+   ],
+   [
+    "2999",
+    "👑 Thần Long Giáng Thế toàn bản đồ · nâng Hỗn Độn Chung"
+   ]
+  ],
+  "tips": [
+   "Tặng quà là vào trận ngay ở mọi chế độ: đánh Boss, thế chỗ NPC hoặc làm viện binh khi PK / tông môn chiến, được thêm phiếu khi đoạt bảo.",
+   "Đánh xong Boss: ai góp sức +1 kỳ, top 3 sát thương +2 kỳ, người kết liễu +3 kỳ và nhận bảo vật. Thắng PK +1 kỳ.",
+   "Lập công, lên cảnh giới, tặng quà nhiều sẽ thăng bậc ngoại hình: Tinh Anh → Chân Truyền → Thánh Tử → Tiên Quân (có cánh) → Chí Tôn (giáp vàng, cánh lớn).",
+   "Mọi quà đều cộng tu vi (60 tu vi mỗi xu) và nâng cấp một pháp bảo bay quanh nhân vật.",
+   "Boss có 3 giai đoạn: dưới 70% máu cuồng bạo, dưới 30% nổi giận và tung tuyệt chiêu toàn sân."
+  ]
+ },
+ "ve-tuong": {
+  "intro": "Một bức tường bê tông 3D dài 64 m. Người xem tặng quà là thợ sơn đi xe nâng tới xịt tranh của họ lên tường: chân dung từ ảnh đại diện TikTok, có cánh, có tên. Tường được lưu lại, tải lại trang vẫn còn nguyên.",
+  "viewers": [
+   [
+    "Bình luận bất kỳ",
+    "Xịt tên bạn lên tường (mỗi phút một lần)"
+   ],
+   [
+    "Gõ màu: do, cam, vang, xanh la, xanh, tim, hong, trang, den, bac",
+    "Chọn màu sơn riêng cho tranh của bạn"
+   ],
+   [
+    "Thả 20 tim",
+    "Một bom sơn có tên bạn"
+   ],
+   [
+    "Follow, chia sẻ",
+    "Xịt tên lên tường"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "🎨 Bom sơn văng tung toé kèm tên"
+   ],
+   [
+    "5",
+    "✈️ Máy bay phun sơn kéo vệt neon ngang tường"
+   ],
+   [
+    "10",
+    "🖼️ Chân dung pixel trong khung cầu vồng"
+   ],
+   [
+    "30",
+    "🦅 Chân dung cánh máy vàng"
+   ],
+   [
+    "99",
+    "😇 Chân dung cánh thiên thần bảy màu"
+   ],
+   [
+    "199",
+    "💖 Phi đội 3 máy bay vẽ trái tim khổng lồ"
+   ],
+   [
+    "299",
+    "🐉 Rồng bay dọc tường phun lửa sơn"
+   ],
+   [
+    "500",
+    "👑 Chân dung lớn cánh rồng, đội vương miện"
+   ],
+   [
+    "999",
+    "🌟 Bích hoạ huyền thoại giữa tường, pháo hoa, lên Bảng Vàng"
+   ]
+  ],
+  "tips": [
+   "Quà combo nhỏ (bom sơn, máy bay) mỗi lần là một tranh, tối đa 5 lần một combo.",
+   "Tường giữ 90 tranh mới nhất, tranh cũ bị vẽ đè dần. Chủ live bấm Rửa tường ở bảng điều khiển để vẽ lại từ đầu.",
+   "Ảnh đại diện TikTok được vẽ thành chân dung pixel; thiếu ảnh thì vẽ chữ cái đầu của tên."
+  ]
+ },
+ "day-xe": {
+  "intro": "Hai xe đua Phe Đỏ và Phe Xanh đấu đầu nhau giữa một đường đất 3D thẳng, rộng, dài 400 000 m (mỗi bên 200 000 m). Người xem bình luận 1 hoặc 2 để chọn phe; mỗi món quà triệu hồi một linh vật hoặc phương tiện 3D (thỏ vàng, đại bàng, rồng, phượng hoàng, sư tử, máy bay, siêu phản lực...) xuất hiện ngay phía xe của người tặng và đẩy xe dần trong suốt thời gian linh vật xuất hiện. Ủi xe đối phương vào căn cứ của họ thì bắt đầu đếm ngược 10 giây: phe kia đẩy được xe ra thì huỷ, giữ đủ 10 giây là thắng ván, có MVP.",
+  "viewers": [
+   [
+    "Gõ 1 (hoặc do, đỏ)",
+    "Vào Phe Đỏ: đẩy xe sang phải"
+   ],
+   [
+    "Gõ 2 (hoặc xanh)",
+    "Vào Phe Xanh: đẩy xe sang trái"
+   ],
+   [
+    "Chưa chọn phe mà tặng quà",
+    "Tặng quà: vào phe đang ít người hơn · Thả tim: vào ngẫu nhiên 1 trong 2 phe"
+   ],
+   [
+    "Thả 10 tim",
+    "Đẩy xe 300 m cho phe mình"
+   ],
+   [
+    "Follow / chia sẻ",
+    "Đẩy 1 000 m / 2 000 m"
+   ]
+  ],
+  "gifts": [
+   [
+    "1",
+    "🐰 Thỏ Vàng chạy sau xe, quạt gió: +1 500 m trong 3 giây"
+   ],
+   [
+    "5",
+    "🦅 Đại Bàng sà qua, luồng gió: +5 000 m"
+   ],
+   [
+    "10",
+    "🐲 Rồng Con bay theo xe, truyền năng lượng: +9 000 m"
+   ],
+   [
+    "99",
+    "🦁 Sư Tử Vàng gầm rồi chạy cạnh xe: +22 000 m"
+   ],
+   [
+    "199",
+    "🐲 Thần Long giáng thế, phun long tức: +30 000 m"
+   ],
+   [
+    "299",
+    "🔥 Phượng Hoàng Lửa tung cánh, mưa lửa: +45 000 m"
+   ],
+   [
+    "500",
+    "👑 Long Phụng Hội Tụ, đại cảnh: +70 000 m"
+   ]
+  ],
+  "tips": [
+   "Xe chạm căn cứ đối phương: đếm ngược 10 giây trên màn hình. Phe đang thua tặng quà đẩy xe ra để phá đếm ngược!",
+   "Lực đẩy chia đều trong thời gian linh vật xuất hiện (không nhảy tức thời); hai phe cùng tặng thì xe giằng co.",
+   "Lực còn dở khi hết ván và quà tặng lúc nghỉ được đẩy tiếp từ từ ở đầu ván sau.",
+   "Chủ live chọn độ dài đường mỗi bên 100 000 / 200 000 / 300 000 m ở bảng điều khiển; có nút Ván mới và Xoá tỉ số.",
+   "Quà combo nhân số mét; quà giá khác các mức trên tính theo mức thấp hơn gần nhất (ví dụ 30 xu = Rồng Con).",
+   "Xu của mọi quà vẫn được ghi về trang admin, cộng theo tài khoản và theo ngày như các game khác."
+  ]
+ }
+}

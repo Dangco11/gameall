@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đẩy Xe 2 Phe</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff2d55'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle'%3E%F0%9F%9A%97%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="scene"></canvas>
+<div id="flash"></div>
+<div id="app">
+  <header id="top">
+    <div class="brand"><span class="logo">🚗</span><div><b>ĐẨY XE 2 PHE</b><small id="status">Gõ 1 vào Phe Đỏ · Gõ 2 vào Phe Xanh</small></div></div>
+    <div class="pills"><span class="pill" id="viewers">👥 0</span><span class="pill" id="live">Chưa nối TikTok</span>
+      <button class="pill btn" id="musicBtn" title="Nhạc nền">🎵</button><button class="pill btn" id="soundBtn" title="Âm thanh">🔈</button></div>
+  </header>
+  <div id="score">
+    <div class="side do"><div class="nm">🔴 ĐỎ</div><div class="join">💬 gõ <b>1</b> vào phe</div><div class="mem">👥 <span id="memDo">0</span></div></div>
+    <div class="mid"><div class="wins"><span id="winDo">0</span><i>:</i><span id="winXanh">0</span></div><small>VÁN <span id="roundN">1</span></small></div>
+    <div class="side xanh"><div class="nm">XANH 🔵</div><div class="join">💬 gõ <b>2</b> vào phe</div><div class="mem"><span id="memXanh">0</span> 👥</div></div>
+  </div>
+  <div id="track">
+    <div class="base do">🏰</div>
+    <div class="bar"><div class="half do"></div><div class="half xanh"></div><div class="center"></div><div class="car" id="carMark">🚗</div></div>
+    <div class="base xanh">🏰</div>
+    <div class="need do">Đỏ cần <b id="needDo">200000</b>m ▶</div>
+    <div class="need xanh">◀ Xanh cần <b id="needXanh">200000</b>m</div>
+  </div>
+  <div id="legL" class="legend"></div>
+  <div id="legR" class="legend"></div>
+  <div id="pushTxt"></div>
+  <div id="banners"></div>
+  <div id="joins"></div>
+  <div id="center" hidden></div>
+  <div id="giftcard" hidden></div>
+  <div id="countdown" hidden><div class="n" id="cdN">10</div><div class="s" id="cdS"></div></div>
+  <div id="boards"><div class="col do" id="bDo"></div><div class="col xanh" id="bXanh"></div></div>
+  <div id="howto"></div>
+  <div id="offline" hidden>Mất kết nối server, đang thử lại…</div>
+  <div id="unlock" hidden>🔈 Bấm vào màn hình để bật âm thanh</div>
+  <div id="sim" hidden>
+    <button id="simToggle" class="simToggle">🧪 Điều khiển &amp; thử</button>
+    <div id="simBody" class="panel">
+      <div class="sec"><b>TikTok LIVE</b>
+        <div class="r"><input id="ttUser" placeholder="username TikTok"><button id="ttConnect" class="pri">Kết nối</button><button id="ttDisconnect">Ngắt</button></div></div>
+      <div class="sec"><b>Người thử</b>
+        <div class="r"><select id="simWho"></select><button id="simRed" class="red">Vào Đỏ (1)</button><button id="simBlue" class="blue">Vào Xanh (2)</button></div>
+        <div class="r"><button id="simLike">❤ x10</button><button id="simFollow">➕ Follow</button><button id="simShare">🔗 Chia sẻ</button><button id="simRandom">🎲 Ngẫu nhiên</button></div></div>
+      <div class="sec"><b>Tặng quà (người đang chọn)</b><div class="r wrap" id="simGifts"></div></div>
+      <div class="sec"><b>Ván đấu</b>
+        <div class="r"><label>Đường đua <select id="setTrack"><option value="100000">Mỗi bên 100 000 m</option><option value="200000">Mỗi bên 200 000 m</option><option value="300000">Mỗi bên 300 000 m</option></select></label></div>
+        <div class="r"><button id="resetRound">🔄 Ván mới</button><button id="resetWins">0 : 0 Xoá tỉ số</button><button id="clearSim">Xoá người thử</button></div>
+        <div class="r"><label><input type="checkbox" id="setVoice"> Giọng bình luận</label><a href="/?live=1" id="openLive">📺 Mở cửa sổ LIVE 9:16</a></div></div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "milk-tea-live",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Milk Tea Live: game quán trà sữa 3D tương tác TikTok LIVE",
+  "scripts": {
+    "start": "node server/main.mjs",
+    "sim": "node server/main.mjs --sim",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "msedge-tts": "2.1.1",
+    "three": "0.170.0",
+    "tiktok-live-connector": "2.5.0",
+    "ws": "8.18.0"
+  }
+}

@@ -1,0 +1,2 @@
+tg-kien-truc.glb: dựng bằng tools/make-world.ts, vân mái ngói / vữa / gỗ / đá từ Poly Haven (CC0, https://polyhaven.com).
+tg-da-*.glb, tg-bui-*.glb: model quét 3D của Poly Haven (CC0).

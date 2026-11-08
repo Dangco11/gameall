@@ -1,0 +1,6 @@
+Nhạc quán: thả file .mp3, .m4a, .ogg (hoặc video .mp4, chỉ phát phần tiếng) vào thư mục assets/music/ ở thư mục gốc
+dự án hoặc vào thư mục này, rồi tải lại trang. Quán phát lần lượt theo thứ tự ngẫu nhiên; đèn, màn LED, sàn nhảy
+và 100 điệu nhảy bắt theo nhịp của bài. Không có file nào thì quán tự chơi nhạc club tổng hợp 124 BPM.
+
+Lưu ý: bài hát có bản quyền có thể làm TikTok tắt tiếng hoặc hạn chế buổi live.
+Bạn tự chọn bài và tự chịu trách nhiệm về bản quyền. File nhạc trong thư mục này không được đưa lên git.

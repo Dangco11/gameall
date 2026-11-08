@@ -1,0 +1,8 @@
+Thả file nhạc đám cưới (.mp3, .m4a, .ogg, hoặc video .mp4 thì chỉ phát phần tiếng) vào thư mục này rồi tải lại trang:
+game sẽ phát lần lượt theo thứ tự ngẫu nhiên, thay cho bài nhạc cưới tự soạn có sẵn.
+
+Lưu ý: bài hát có bản quyền có thể làm TikTok tắt tiếng hoặc hạn chế buổi live.
+Bạn tự chọn bài và tự chịu trách nhiệm về bản quyền. File nhạc trong thư mục này không được đưa lên git.
+
+Nhạc nhảy: thả file vào thư mục con music/nhay/ (cùng định dạng như trên). Màn sàn nhảy sau cắt bánh
+và quà "Sàn nhảy" sẽ phát bài đó (lặp lại tới hết giờ nhảy) thay cho nhạc sàn tự soạn; nhạc nền tạm nghỉ trong lúc nhảy.

@@ -1,0 +1,185 @@
+:root{
+  --panel: rgba(10, 18, 38, 0.72); --line: rgba(120, 190, 255, 0.35); --head: linear-gradient(90deg, #1e6cff, #6a3dff);
+  --gold: #ffd23a; --silver: #dfe7f2; --bronze: #ff9a5a; --txt: #f4f8ff; --dim: #9fb2cc; --hot: #ff4f8a; --cyan: #37e6ff;
+}
+*{ box-sizing: border-box; }
+html, body{ margin: 0; height: 100%; overflow: hidden; background: #0b1a33; color: var(--txt); font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+#scene, #speed, #flash{ position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+#speed{ pointer-events: none; }
+#flash{ pointer-events: none; background: #fff6dc; opacity: 0; }
+#app{ position: fixed; inset: 0; pointer-events: none; }
+#app button, #app input, #app select, #app a, #sim{ pointer-events: auto; }
+.panel{ background: var(--panel); border: 1px solid var(--line); border-radius: 12px; backdrop-filter: blur(4px); box-shadow: 0 6px 20px rgba(0,0,0,0.35); }
+.ph{ background: var(--head); margin: -1px -1px 4px; padding: 4px 10px; border-radius: 12px 12px 0 0; font: italic 900 12px 'Segoe UI', Arial; letter-spacing: .5px; text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+
+/* thanh trên */
+#top{ position: absolute; left: 0; right: 0; top: 0; height: 42px; display: flex; align-items: center; gap: 10px; padding: 0 8px;
+  background: linear-gradient(180deg, rgba(5,12,30,.85), rgba(5,12,30,0)); }
+.brand{ display: flex; align-items: center; gap: 6px; }
+.brand .logo{ font-size: 24px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.6)); }
+.brand b{ display: block; font: italic 900 17px 'Segoe UI'; letter-spacing: .5px; background: linear-gradient(90deg, #fff, #9fe3ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.brand small{ display: block; font-size: 10px; color: var(--dim); margin-top: -2px; }
+#status{ flex: 1; text-align: center; font: 800 13px 'Segoe UI'; text-shadow: 0 1px 3px #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pills{ display: flex; gap: 4px; }
+.pill{ background: rgba(0,0,0,.45); border: 1px solid rgba(255,255,255,.15); color: #fff; border-radius: 999px; padding: 3px 9px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.pill.on{ background: #e8233f; border-color: #ff7a8c; }
+.pill.warn{ background: #a86a00; }
+.pill.btn{ cursor: pointer; padding: 3px 7px; }
+
+/* bảng xếp hạng */
+#board{ position: absolute; left: 6px; top: 46px; width: 200px; padding-bottom: 4px; font-size: 11.5px; }
+.br{ display: flex; align-items: center; gap: 5px; padding: 1.5px 6px; margin: 1px 3px; border-radius: 6px; }
+.br:nth-child(even){ background: rgba(255,255,255,.04); }
+.br .bn{ width: 18px; height: 16px; display: grid; place-items: center; border-radius: 4px; background: rgba(255,255,255,.12); font: italic 900 11px 'Segoe UI'; }
+.br.p1 .bn{ background: var(--gold); color: #3a2a00; } .br.p2 .bn{ background: var(--silver); color: #223; } .br.p3 .bn{ background: var(--bronze); color: #3a1500; }
+.br .bd{ width: 8px; height: 8px; border-radius: 50%; flex: none; box-shadow: 0 0 0 1.5px rgba(0,0,0,.5); }
+.br .bnm{ flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 700; }
+.br .bg{ color: var(--cyan); font: italic 800 10.5px 'Segoe UI'; white-space: nowrap; }
+.br.focus{ background: rgba(55,230,255,.2) !important; outline: 1px solid rgba(55,230,255,.6); }
+.ai{ font-style: normal; font-size: 8.5px; background: #556; border-radius: 3px; padding: 0 3px; margin-left: 4px; vertical-align: 1px; }
+.more{ color: var(--dim); font-size: 10px; padding: 2px 8px; }
+#minimap{ position: absolute; left: 6px; top: 300px; width: 150px; height: 150px; border-radius: 12px; background: rgba(10,18,38,.55); border: 1px solid var(--line); }
+
+/* bảng skill */
+#skills{ position: absolute; right: 6px; top: 46px; width: 172px; padding-bottom: 5px; font-size: 11.5px; }
+.sk{ display: flex; align-items: center; gap: 5px; padding: 2px 7px; }
+.sk .si{ width: 20px; text-align: center; font-size: 15px; }
+.sk .sx{ width: 44px; color: var(--gold); font: italic 900 11px 'Segoe UI'; }
+.sk .sn{ flex: 1; font-weight: 700; white-space: nowrap; }
+.sk.like .sx{ color: var(--hot); }
+.skn{ color: var(--dim); font-size: 9.5px; padding: 1px 8px 0; }
+
+#camTag{ position: absolute; top: 63%; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,.5); border-radius: 999px; padding: 3px 12px; font: italic 800 12px 'Segoe UI'; white-space: nowrap; max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+
+/* quà bên trái */
+#pops{ position: absolute; left: 6px; top: 460px; width: 260px; display: flex; flex-direction: column; gap: 5px; }
+.pop{ display: flex; align-items: center; gap: 7px; background: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.25)); border-radius: 999px 14px 14px 999px; padding: 3px 8px 3px 3px; animation: popIn .35s cubic-bezier(.2,1.6,.4,1); }
+.pop.big{ background: linear-gradient(90deg, rgba(150,40,255,.85), rgba(255,60,140,.45)); box-shadow: 0 0 18px rgba(255,80,200,.5); }
+.pop.out{ opacity: 0; transform: translateX(-30px); transition: all .45s; }
+.pop .av{ width: 38px; height: 38px; border-radius: 50%; background: #3b4b78; display: grid; place-items: center; font-weight: 900; overflow: hidden; border: 2px solid #fff; flex: none; }
+.pop .av img{ width: 100%; height: 100%; object-fit: cover; }
+.pop .pt{ flex: 1; min-width: 0; line-height: 1.15; }
+.pop .pt b{ display: block; font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pop .pt small{ display: block; font-size: 10px; color: #dde; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pop .ps{ font: italic 900 10.5px 'Segoe UI'; color: var(--gold); }
+.pop .pk{ display: flex; align-items: center; gap: 2px; }
+.pop .pi{ font-size: 26px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.5)); }
+.pop .px{ font: italic 900 20px 'Segoe UI'; color: #fff; text-shadow: 0 2px 0 #c2185b, 0 0 8px rgba(255,80,160,.8); }
+@keyframes popIn{ from{ transform: translateX(-60px) scale(.8); opacity: 0; } }
+
+/* bảng tin */
+#feed{ position: absolute; left: 8px; bottom: 236px; width: 330px; display: flex; flex-direction: column-reverse; gap: 3px; }
+.fl{ align-self: flex-start; background: rgba(0,0,0,.55); border-radius: 6px; padding: 2px 8px; font: 700 11.5px 'Segoe UI'; border-left: 3px solid var(--cyan); animation: popIn .3s; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fl.gift{ border-color: var(--gold); } .fl.atk{ border-color: #ff4f4f; } .fl.big{ border-color: var(--hot); background: rgba(120,20,80,.6); } .fl.join{ border-color: #6fdc7a; }
+.fl.old{ opacity: .55; transition: opacity 1s; }
+
+/* cách chơi + kỷ lục */
+#howto{ position: absolute; left: 6px; bottom: 26px; width: calc(100% - 232px); max-width: 420px; padding: 0 0 5px; font-size: 11px; }
+#howto::before{ content: '💬 CÁCH CHƠI'; display: block; background: linear-gradient(90deg, #ff3d6e, #ff9a3a); padding: 3px 10px; border-radius: 12px 12px 0 0; font: italic 900 12px 'Segoe UI'; margin: -1px -1px 3px; }
+.hw{ display: flex; align-items: center; gap: 6px; padding: 1px 8px; font-weight: 700; }
+.hw .k{ min-width: 20px; height: 18px; display: grid; place-items: center; background: #fff; color: #c2185b; border-radius: 5px; font: 900 12px 'Segoe UI'; }
+.planes{ display: flex; flex-wrap: wrap; gap: 3px; padding: 2px 8px 3px 34px; }
+.pl{ background: rgba(255,255,255,.12); border-radius: 5px; padding: 0 5px; font: 800 10.5px 'Segoe UI'; color: #bfe9ff; }
+#records{ position: absolute; right: 6px; bottom: 26px; width: 214px; font-size: 11.5px; padding-bottom: 4px; min-height: 120px; }
+.rr{ display: flex; gap: 6px; padding: 1.5px 8px; align-items: center; }
+.rr .rn{ flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 700; }
+.rr .rv{ color: var(--gold); font: italic 800 11px 'Segoe UI'; }
+.empty{ color: var(--dim); padding: 6px 10px; font-size: 11px; }
+#fair{ position: absolute; left: 0; right: 0; bottom: 4px; text-align: center; color: rgba(255,255,255,.55); font-size: 9.5px; text-shadow: 0 1px 2px #000; }
+
+/* tên trên máy bay */
+#labels{ position: absolute; inset: 0; overflow: hidden; }
+.tag{ position: absolute; left: 0; top: 0; display: flex; gap: 4px; align-items: center; background: rgba(0,0,0,.55); border-radius: 6px; padding: 1px 6px; font: 800 11px 'Segoe UI'; white-space: nowrap; transform-origin: 50% 100%; border: 1px solid rgba(255,255,255,.15); max-width: 160px; }
+.tag span{ overflow: hidden; text-overflow: ellipsis; }
+.tag b{ color: var(--cyan); font-style: italic; }
+.tag.p1{ border-color: var(--gold); } .tag.p1 b{ color: var(--gold); }
+.tag.p2 b{ color: var(--silver); } .tag.p3 b{ color: var(--bronze); }
+.tag.focus{ background: rgba(30,108,255,.75); border-color: #9fe3ff; }
+.tag.bot{ opacity: .8; }
+.tag i{ font-style: normal; }
+
+/* chữ lớn giữa màn hình */
+#center{ position: absolute; left: 0; right: 0; top: 34%; text-align: center; white-space: pre-line; font: italic 900 40px 'Segoe UI'; color: #fff;
+  text-shadow: 0 4px 0 #1e3c8f, 0 0 24px rgba(55,230,255,.8); animation: zoomIn .5s cubic-bezier(.2,1.6,.4,1); padding: 0 12px; }
+#center.count{ font-size: 110px; text-shadow: 0 6px 0 #8f1e3c, 0 0 40px rgba(255,80,120,.9); }
+#center.go{ font-size: 64px; color: var(--gold); text-shadow: 0 5px 0 #8f5a00, 0 0 30px rgba(255,210,60,.9); }
+#center.big{ font-size: 34px; color: #fff; text-shadow: 0 4px 0 #8f1e6a, 0 0 30px rgba(255,80,200,.9); }
+#center.atk{ font-size: 30px; text-shadow: 0 4px 0 #8f1e1e, 0 0 24px rgba(255,80,60,.9); }
+#center.info{ font-size: 26px; }
+@keyframes zoomIn{ from{ transform: scale(2.2); opacity: 0; } }
+#caption{ position: absolute; left: 50%; bottom: 186px; transform: translateX(-50%); width: max-content; max-width: 94%; background: rgba(0,0,0,.6); border-radius: 10px; padding: 4px 12px; font: 700 12.5px 'Segoe UI'; text-align: center; }
+#caption::before{ content: '🎙️ '; }
+
+/* vinh danh nhà vô địch */
+#result{ position: absolute; left: 50%; top: 48px; transform: translateX(-50%); width: min(440px, 94%); text-align: center; animation: champIn .8s cubic-bezier(.2,1.5,.4,1); pointer-events: none; }
+#result .ct{ font: italic 900 30px 'Segoe UI'; letter-spacing: 1px; background: linear-gradient(90deg, #fff6c8, #ffd23a, #fff, #ffb300, #fff6c8); background-size: 300% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 3px 0 #6a4100) drop-shadow(0 0 14px rgba(255,200,40,.85)); animation: shine 2.2s linear infinite; }
+.cavb{ position: relative; width: 96px; height: 110px; margin: 2px auto 0; }
+.cavb .crown{ position: absolute; left: 50%; top: -6px; transform: translateX(-50%) rotate(-8deg); font-size: 40px; z-index: 2; filter: drop-shadow(0 0 10px rgba(255,210,60,.9)); animation: bob 1.4s ease-in-out infinite; }
+.cav{ position: absolute; left: 4px; bottom: 0; width: 88px; height: 88px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; font: 900 40px 'Segoe UI';
+  background: radial-gradient(circle at 35% 30%, var(--pc, #3b4b78), #10162a); border: 4px solid #ffd23a; box-shadow: 0 0 0 3px #7a4a00, 0 0 30px 8px rgba(255,200,40,.75); animation: pulseGold 1.6s ease-in-out infinite; }
+.cav img{ width: 100%; height: 100%; object-fit: cover; }
+#result .cn{ margin-top: 6px; font: italic 900 34px 'Segoe UI'; color: #fff; text-shadow: 0 3px 0 #8a5a00, 0 0 22px rgba(255,210,60,.95), 0 0 4px #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0 6px; }
+#result .cm{ display: inline-block; margin-top: 4px; background: rgba(40,20,0,.6); border: 1px solid rgba(255,210,60,.7); border-radius: 999px; padding: 3px 12px; font: 800 13px 'Segoe UI'; color: #ffeaa0; }
+#result .crec{ margin-top: 6px; font: italic 900 20px 'Segoe UI'; color: #ff4fd8; text-shadow: 0 2px 0 #5a0040, 0 0 16px rgba(255,80,220,.9); animation: beat 0.9s ease-in-out infinite; }
+@keyframes beat{ 50%{ transform: scale(1.1); } }
+#result2{ position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); width: min(400px, 92%); display: flex; flex-direction: column; gap: 5px; animation: popIn .6s .4s both; }
+.rr2{ display: flex; align-items: center; gap: 8px; background: rgba(10,18,38,.78); border-radius: 12px; padding: 5px 12px; border: 1px solid rgba(255,255,255,.2); }
+.rr2 .m{ font-size: 22px; } .rr2 b{ flex: 1; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .rr2 small{ font: italic 800 13px 'Segoe UI'; color: var(--cyan); }
+.rr2.p2{ border-color: var(--silver); } .rr2.p3{ border-color: var(--bronze); }
+#result2 .rs{ text-align: center; font-weight: 800; font-size: 12.5px; color: #bfe9ff; text-shadow: 0 1px 3px #000; }
+/* lúc vinh danh: ẩn các bảng khác, viền màn hình ánh vàng, dồn mọi ánh nhìn vào máy bay vô địch */
+#vig{ position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .8s; background: radial-gradient(ellipse at 50% 52%, rgba(0,0,0,0) 45%, rgba(40,22,0,.55) 100%); box-shadow: inset 0 0 80px rgba(255,190,40,.35); }
+body.champ #vig{ opacity: 1; }
+body.champ #board, body.champ #skills, body.champ #minimap, body.champ #howto, body.champ #records, body.champ #feed, body.champ #pops, body.champ #camTag, body.champ #labels, body.champ #center, body.champ #toast{ opacity: 0; transition: opacity .5s; pointer-events: none; }
+body.champ #status{ color: #ffd23a; }
+@keyframes champIn{ from{ transform: translateX(-50%) scale(2.4); opacity: 0; } }
+@keyframes shine{ to{ background-position: 300% 0; } }
+@keyframes bob{ 50%{ transform: translateX(-50%) translateY(-5px) rotate(-8deg); } }
+@keyframes pulseGold{ 50%{ box-shadow: 0 0 0 3px #7a4a00, 0 0 46px 16px rgba(255,210,60,.95); } }
+
+#offline, #unlock{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,.8); padding: 10px 16px; border-radius: 10px; font-weight: 800; }
+#unlock{ top: auto; bottom: 30%; pointer-events: none; }
+
+/* bảng điều khiển (chỉ màn hình máy tính, không có trong cửa sổ LIVE) */
+#sim{ position: absolute; right: 230px; bottom: 26px; width: 420px; z-index: 5; }
+.simToggle{ display: block; margin-left: auto; background: #1e6cff; color: #fff; border: 0; border-radius: 8px 8px 0 0; padding: 5px 12px; font-weight: 800; cursor: pointer; }
+#simBody{ padding: 8px; max-height: 58vh; overflow: auto; border-radius: 12px 0 12px 12px; }
+.srow{ display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-bottom: 7px; }
+.srow .st{ width: 100%; font-size: 11.5px; color: var(--dim); }
+#simBody button, #simBody input, #simBody select{ font: 700 12px 'Segoe UI'; border-radius: 6px; border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.1); color: #fff; padding: 4px 8px; }
+#simBody select option{ color: #000; }
+#simBody button{ cursor: pointer; } #simBody button:hover{ background: rgba(255,255,255,.22); }
+#simBody button.pri{ background: #1e6cff; border-color: #6fa4ff; }
+#simBody input:not([type]){ width: 130px; }
+.gifts{ display: flex; flex-wrap: wrap; gap: 4px; }
+#simBody .gb{ background: rgba(255,210,60,.15); border-color: rgba(255,210,60,.5); }
+.lab{ display: flex; align-items: center; gap: 4px; font-size: 12px; margin-right: 8px; }
+.golive{ display: inline-block; margin-top: 2px; color: #9fe3ff; font-weight: 800; font-size: 12.5px; }
+.note{ color: var(--dim); font-size: 10.5px; margin-top: 4px; }
+
+/* khổ dọc 9:16 (cửa sổ LIVE 540 x 960) */
+body.live #sim, body.live #musicBtn, body.live #soundBtn{ display: none; }
+body.portrait #howto{ width: calc(100% - 232px); }
+@media (max-height: 760px){ #minimap{ display: none; } #pops{ top: 300px; } }
+
+/* đổi bản đồ: màn đen mờ dần */
+#fade{ position: fixed; inset: 0; background: #050a14; opacity: 0; pointer-events: none; transition: opacity .35s; z-index: 20; }
+#fade.on{ opacity: 1; }
+#toast{ position: absolute; left: 50%; top: 58%; transform: translateX(-50%); font: italic 900 26px 'Segoe UI'; color: #ffd23a; text-shadow: 0 3px 0 #7a4a00, 0 0 18px rgba(255,210,60,.8); animation: zoomIn .35s cubic-bezier(.2,1.6,.4,1); }
+.tag.vip{ background: linear-gradient(90deg, #8a6418, #e8c45a); border-color: #fff1b8; color: #2a1800; }
+.tag.vip b{ color: #2a1800; }
+#result2[hidden], #result[hidden]{ display: none; }
+
+/* khung nhỏ quay trực tiếp top 1 (khi máy quay chính đang quay người khác) */
+#pip{ position: absolute; right: 6px; bottom: 190px; width: 200px; border-radius: 10px; overflow: hidden; border: 2px solid var(--gold); box-shadow: 0 0 16px rgba(255,210,60,.55), 0 6px 18px rgba(0,0,0,.5); animation: popIn .35s; }
+#pip .pv{ width: 100%; height: 118px; }
+#pip .pl{ background: linear-gradient(90deg, #8a6418, #e8b844); color: #2a1800; font: italic 900 11.5px 'Segoe UI'; padding: 2px 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#pip[hidden]{ display: none; }
+body.champ #pip{ display: none; }
+#camTag{ max-width: 330px !important; }
+/* tap tym để tăng tốc (cạnh "Gõ 1 để vào đua") */
+.hw .k.tap{ margin-left: 4px; background: #ff4f8a; color: #fff; font-size: 11px; animation: beat 0.9s ease-in-out infinite; }
+.hw .tapt{ color: #ffb3cc; white-space: nowrap; font-size: 10px; letter-spacing: -0.2px; }
+.hw:first-child > span:first-of-type{ white-space: nowrap; }
+.hw .watch{ color: #9fe3ff; font-size: 10.5px; line-height: 1.2; }

@@ -1,0 +1,517 @@
+O000001|2026-11-02T07:24:24.531Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000001|2026-11-02T07:24:24.602Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000002|2026-11-02T07:24:24.784Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000002|2026-11-02T07:24:24.806Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000003|2026-11-02T07:24:25.035Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000003|2026-11-02T07:24:25.206Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000004|2026-11-02T07:24:25.314Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000005|2026-11-02T07:24:25.582Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000006|2026-11-02T07:24:25.815Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000007|2026-11-02T07:24:26.085Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000008|2026-11-02T07:24:26.346Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000003|2026-11-02T07:24:27.870Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000003|2026-11-02T07:24:27.870Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000004|2026-11-02T07:24:27.871Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000001|2026-11-02T07:24:28.873Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000001|2026-11-02T07:24:28.873Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000005|2026-11-02T07:24:28.873Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000002|2026-11-02T07:24:29.073Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000002|2026-11-02T07:24:29.073Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000006|2026-11-02T07:24:29.074Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000005|2026-11-02T07:24:30.477Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000007|2026-11-02T07:24:30.477Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000001|2026-11-02T08:01:04.495Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000002|2026-11-02T08:01:04.495Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000003|2026-11-02T08:01:04.495Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000003|2026-11-02T08:01:05.896Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000003|2026-11-02T08:01:05.896Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000004|2026-11-02T08:01:05.896Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000001|2026-11-02T08:01:06.296Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000001|2026-11-02T08:01:06.296Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000005|2026-11-02T08:01:06.297Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000002|2026-11-02T08:01:06.497Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000002|2026-11-02T08:01:06.497Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000006|2026-11-02T08:01:06.497Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000005|2026-11-02T08:01:07.899Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000007|2026-11-02T08:01:07.899Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000006|2026-11-02T08:01:08.901Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000008|2026-11-02T08:01:08.901Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000004|2026-11-02T08:01:09.101Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000003|2026-11-02T08:01:10.504Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000004|2026-11-02T08:01:10.504Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000001|2026-11-02T08:01:10.905Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000005|2026-11-02T08:01:10.906Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000002|2026-11-02T08:01:11.106Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000006|2026-11-02T08:01:11.106Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000007|2026-11-02T08:01:11.906Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000004|2026-11-02T08:01:15.111Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000007|2026-11-02T08:01:15.111Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000008|2026-11-02T08:01:15.311Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000005|2026-11-02T08:01:15.512Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000008|2026-11-02T08:01:15.512Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000006|2026-11-02T08:01:15.712Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000007|2026-11-02T08:01:19.729Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000008|2026-11-02T08:01:20.130Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000009|2026-11-02T08:01:28.551Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000009|2026-11-02T08:01:28.576Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000010|2026-11-02T08:01:28.804Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000010|2026-11-02T08:01:28.976Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000011|2026-11-02T08:01:29.055Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000011|2026-11-02T08:01:29.186Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000012|2026-11-02T08:01:29.316Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000013|2026-11-02T08:01:29.555Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000014|2026-11-02T08:01:29.805Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000015|2026-11-02T08:01:30.061Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000016|2026-11-02T08:01:30.308Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000011|2026-11-02T08:01:31.806Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000011|2026-11-02T08:01:31.807Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000012|2026-11-02T08:01:31.807Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000009|2026-11-02T08:01:32.808Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000009|2026-11-02T08:01:32.808Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000013|2026-11-02T08:01:32.808Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000010|2026-11-02T08:01:33.209Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000010|2026-11-02T08:01:33.210Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000014|2026-11-02T08:01:33.210Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000013|2026-11-02T08:01:34.441Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000015|2026-11-02T08:01:34.441Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000012|2026-11-02T08:01:35.042Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000016|2026-11-02T08:01:35.042Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000014|2026-11-02T08:01:35.643Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000011|2026-11-02T08:01:36.444Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000012|2026-11-02T08:01:36.444Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000009|2026-11-02T08:01:37.444Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000013|2026-11-02T08:01:37.445Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000010|2026-11-02T08:01:37.845Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000014|2026-11-02T08:01:37.846Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000015|2026-11-02T08:01:38.445Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000012|2026-11-02T08:01:41.050Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000015|2026-11-02T08:01:41.050Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000016|2026-11-02T08:01:41.460Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000013|2026-11-02T08:01:42.062Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000016|2026-11-02T08:01:42.063Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000014|2026-11-02T08:01:42.462Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000015|2026-11-02T08:01:45.711Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000016|2026-11-02T08:01:46.712Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000017|2026-11-02T08:02:58.727Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000017|2026-11-02T08:02:58.898Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000018|2026-11-02T08:02:58.978Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000018|2026-11-02T08:02:59.098Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000019|2026-11-02T08:02:59.228Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000019|2026-11-02T08:02:59.301Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000020|2026-11-02T08:02:59.480Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000021|2026-11-02T08:02:59.729Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000022|2026-11-02T08:02:59.982Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000023|2026-11-02T08:03:00.263Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000024|2026-11-02T08:03:00.490Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000025|2026-11-02T08:03:00.737Z|QUEUED|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000019|2026-11-02T08:03:01.941Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000019|2026-11-02T08:03:01.942Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000020|2026-11-02T08:03:01.942Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000017|2026-11-02T08:03:03.154Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000017|2026-11-02T08:03:03.154Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000021|2026-11-02T08:03:03.155Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000018|2026-11-02T08:03:03.354Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000018|2026-11-02T08:03:03.354Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000022|2026-11-02T08:03:03.355Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000020|2026-11-02T08:03:04.763Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000021|2026-11-02T08:03:04.763Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000023|2026-11-02T08:03:04.763Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000024|2026-11-02T08:03:04.764Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000022|2026-11-02T08:03:05.363Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000025|2026-11-02T08:03:05.364Z|BREWING|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000019|2026-11-02T08:03:06.570Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000020|2026-11-02T08:03:06.570Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000017|2026-11-02T08:03:07.683Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000021|2026-11-02T08:03:07.685Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000018|2026-11-02T08:03:07.883Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000022|2026-11-02T08:03:07.884Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000023|2026-11-02T08:03:08.284Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000024|2026-11-02T08:03:10.100Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000020|2026-11-02T08:03:11.102Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000025|2026-11-02T08:03:11.104Z|READY|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000023|2026-11-02T08:03:11.104Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000021|2026-11-02T08:03:12.304Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000024|2026-11-02T08:03:12.304Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000022|2026-11-02T08:03:12.504Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000025|2026-11-02T08:03:12.504Z|DELIVERING|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000023|2026-11-02T08:03:15.749Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000024|2026-11-02T08:03:16.950Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000025|2026-11-02T08:03:17.151Z|SERVED|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000026|2026-11-02T08:07:52.561Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000026|2026-11-02T08:07:52.599Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000027|2026-11-02T08:07:52.812Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000027|2026-11-02T08:07:53.054Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000028|2026-11-02T08:07:53.061Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000028|2026-11-02T08:07:53.258Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000029|2026-11-02T08:07:53.313Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000030|2026-11-02T08:07:53.562Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000031|2026-11-02T08:07:53.876Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000032|2026-11-02T08:07:54.105Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000033|2026-11-02T08:07:54.358Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000028|2026-11-02T08:07:55.890Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000028|2026-11-02T08:07:55.890Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000029|2026-11-02T08:07:55.890Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000026|2026-11-02T08:07:56.899Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000026|2026-11-02T08:07:56.899Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000030|2026-11-02T08:07:56.899Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000027|2026-11-02T08:07:57.299Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000027|2026-11-02T08:07:57.299Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000031|2026-11-02T08:07:57.300Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000030|2026-11-02T08:07:58.501Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000032|2026-11-02T08:07:58.501Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000029|2026-11-02T08:07:59.102Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000033|2026-11-02T08:07:59.102Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000031|2026-11-02T08:07:59.702Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000028|2026-11-02T08:08:00.502Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000029|2026-11-02T08:08:00.503Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000026|2026-11-02T08:08:01.516Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000030|2026-11-02T08:08:01.517Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000027|2026-11-02T08:08:01.918Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000031|2026-11-02T08:08:01.918Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000032|2026-11-02T08:08:02.518Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000029|2026-11-02T08:08:05.166Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000032|2026-11-02T08:08:05.167Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000033|2026-11-02T08:08:05.567Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000030|2026-11-02T08:08:06.167Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000033|2026-11-02T08:08:06.168Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000031|2026-11-02T08:08:06.569Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000032|2026-11-02T08:08:09.820Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000033|2026-11-02T08:08:10.835Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000034|2026-11-02T08:08:30.331Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000034|2026-11-02T08:08:30.343Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000035|2026-11-02T08:08:30.574Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000035|2026-11-02T08:08:30.743Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000036|2026-11-02T08:08:30.807Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000036|2026-11-02T08:08:30.943Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000037|2026-11-02T08:08:31.056Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000038|2026-11-02T08:08:31.307Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000039|2026-11-02T08:08:31.557Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000040|2026-11-02T08:08:31.813Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000041|2026-11-02T08:08:32.090Z|QUEUED|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000036|2026-11-02T08:08:33.549Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000036|2026-11-02T08:08:33.549Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000037|2026-11-02T08:08:33.549Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000034|2026-11-02T08:08:34.555Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000034|2026-11-02T08:08:34.556Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000038|2026-11-02T08:08:34.556Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000035|2026-11-02T08:08:34.956Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000035|2026-11-02T08:08:34.957Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000039|2026-11-02T08:08:34.957Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000038|2026-11-02T08:08:36.187Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000040|2026-11-02T08:08:36.188Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000037|2026-11-02T08:08:36.788Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000041|2026-11-02T08:08:36.789Z|BREWING|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000039|2026-11-02T08:08:37.389Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000036|2026-11-02T08:08:38.192Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000037|2026-11-02T08:08:38.192Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000034|2026-11-02T08:08:39.193Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000038|2026-11-02T08:08:39.193Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000035|2026-11-02T08:08:39.594Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000039|2026-11-02T08:08:39.594Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000040|2026-11-02T08:08:40.194Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000037|2026-11-02T08:08:42.825Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000040|2026-11-02T08:08:42.826Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000041|2026-11-02T08:08:43.225Z|READY|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000038|2026-11-02T08:08:43.827Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000041|2026-11-02T08:08:43.827Z|DELIVERING|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000039|2026-11-02T08:08:44.227Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000040|2026-11-02T08:08:47.449Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000041|2026-11-02T08:08:48.451Z|SERVED|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000042|2026-11-02T08:10:14.107Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000042|2026-11-02T08:10:14.131Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000043|2026-11-02T08:10:14.359Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000043|2026-11-02T08:10:14.530Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000044|2026-11-02T08:10:14.610Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000044|2026-11-02T08:10:14.731Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000045|2026-11-02T08:10:14.860Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000046|2026-11-02T08:10:15.118Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000047|2026-11-02T08:10:15.362Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000048|2026-11-02T08:10:15.616Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000049|2026-11-02T08:10:15.862Z|QUEUED|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000044|2026-11-02T08:10:17.336Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000044|2026-11-02T08:10:17.337Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000045|2026-11-02T08:10:17.337Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000042|2026-11-02T08:10:18.339Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000042|2026-11-02T08:10:18.339Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000046|2026-11-02T08:10:18.339Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000043|2026-11-02T08:10:18.743Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000043|2026-11-02T08:10:18.746Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000047|2026-11-02T08:10:18.747Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000046|2026-11-02T08:10:19.947Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000048|2026-11-02T08:10:19.948Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000045|2026-11-02T08:10:20.549Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000049|2026-11-02T08:10:20.550Z|BREWING|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000047|2026-11-02T08:10:21.151Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000044|2026-11-02T08:10:21.954Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000045|2026-11-02T08:10:21.954Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000042|2026-11-02T08:10:22.974Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000046|2026-11-02T08:10:22.975Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000043|2026-11-02T08:10:23.382Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000047|2026-11-02T08:10:23.383Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000048|2026-11-02T08:10:23.982Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000045|2026-11-02T08:10:26.585Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000048|2026-11-02T08:10:26.585Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000049|2026-11-02T08:10:26.986Z|READY|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000046|2026-11-02T08:10:27.590Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000049|2026-11-02T08:10:27.591Z|DELIVERING|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000047|2026-11-02T08:10:27.994Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000048|2026-11-02T08:10:31.139Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000049|2026-11-02T08:10:32.141Z|SERVED|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000050|2026-11-02T09:26:17.850Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000050|2026-11-02T09:26:17.990Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000051|2026-11-02T09:26:18.099Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000051|2026-11-02T09:26:18.192Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000052|2026-11-02T09:26:18.349Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000052|2026-11-02T09:26:18.391Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000053|2026-11-02T09:26:18.600Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000054|2026-11-02T09:26:18.849Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000055|2026-11-02T09:26:19.102Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000056|2026-11-02T09:26:19.353Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000057|2026-11-02T09:26:19.603Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000052|2026-11-02T09:26:20.997Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000052|2026-11-02T09:26:20.998Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000053|2026-11-02T09:26:20.998Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000050|2026-11-02T09:26:22.199Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000050|2026-11-02T09:26:22.199Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000054|2026-11-02T09:26:22.199Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000051|2026-11-02T09:26:22.398Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000051|2026-11-02T09:26:22.399Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000055|2026-11-02T09:26:22.400Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000054|2026-11-02T09:26:23.801Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000056|2026-11-02T09:26:23.802Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000053|2026-11-02T09:26:24.202Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000057|2026-11-02T09:26:24.202Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000055|2026-11-02T09:26:24.804Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000052|2026-11-02T09:26:25.613Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000053|2026-11-02T09:26:25.615Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000050|2026-11-02T09:26:26.828Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000054|2026-11-02T09:26:26.828Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000051|2026-11-02T09:26:27.029Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000055|2026-11-02T09:26:27.031Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000056|2026-11-02T09:26:27.903Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000053|2026-11-02T09:26:30.176Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000056|2026-11-02T09:26:30.176Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000057|2026-11-02T09:26:30.776Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000054|2026-11-02T09:26:31.376Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000057|2026-11-02T09:26:31.377Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000055|2026-11-02T09:26:31.577Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000056|2026-11-02T09:26:34.737Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000057|2026-11-02T09:26:35.978Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000058|2026-11-02T09:27:08.277Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000058|2026-11-02T09:27:08.429Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000059|2026-11-02T09:27:08.527Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000059|2026-11-02T09:27:08.630Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000060|2026-11-02T09:27:08.779Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000060|2026-11-02T09:27:08.830Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000061|2026-11-02T09:27:09.030Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000062|2026-11-02T09:27:09.280Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000063|2026-11-02T09:27:09.530Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000064|2026-11-02T09:27:09.778Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000065|2026-11-02T09:27:10.030Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000060|2026-11-02T09:27:11.460Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000060|2026-11-02T09:27:11.460Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000061|2026-11-02T09:27:11.460Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000058|2026-11-02T09:27:12.660Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000058|2026-11-02T09:27:12.662Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000062|2026-11-02T09:27:12.662Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000059|2026-11-02T09:27:12.876Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000059|2026-11-02T09:27:12.877Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000063|2026-11-02T09:27:12.877Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000062|2026-11-02T09:27:14.319Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000064|2026-11-02T09:27:14.319Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000061|2026-11-02T09:27:14.727Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000065|2026-11-02T09:27:14.727Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000063|2026-11-02T09:27:15.331Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000060|2026-11-02T09:27:16.132Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000061|2026-11-02T09:27:16.133Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000058|2026-11-02T09:27:17.182Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000062|2026-11-02T09:27:17.183Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000059|2026-11-02T09:27:17.383Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000063|2026-11-02T09:27:17.384Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000064|2026-11-02T09:27:18.387Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000061|2026-11-02T09:27:20.803Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000064|2026-11-02T09:27:20.803Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000065|2026-11-02T09:27:21.208Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000062|2026-11-02T09:27:21.814Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000065|2026-11-02T09:27:21.815Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000063|2026-11-02T09:27:22.029Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000064|2026-11-02T09:27:25.443Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000065|2026-11-02T09:27:26.448Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000066|2026-11-02T09:28:15.110Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000066|2026-11-02T09:28:15.211Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000067|2026-11-02T09:28:15.340Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000067|2026-11-02T09:28:15.412Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000068|2026-11-02T09:28:15.591Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000068|2026-11-02T09:28:15.612Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000069|2026-11-02T09:28:15.840Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000070|2026-11-02T09:28:16.092Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000071|2026-11-02T09:28:16.343Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000072|2026-11-02T09:28:16.594Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000073|2026-11-02T09:28:16.844Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000068|2026-11-02T09:28:18.278Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000068|2026-11-02T09:28:18.279Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000069|2026-11-02T09:28:18.279Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000066|2026-11-02T09:28:19.483Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000066|2026-11-02T09:28:19.483Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000070|2026-11-02T09:28:19.484Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000067|2026-11-02T09:28:19.685Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000067|2026-11-02T09:28:19.685Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000071|2026-11-02T09:28:19.686Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000070|2026-11-02T09:28:21.094Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000072|2026-11-02T09:28:21.094Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000069|2026-11-02T09:28:21.494Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000073|2026-11-02T09:28:21.495Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000071|2026-11-02T09:28:22.095Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000068|2026-11-02T09:28:22.895Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000069|2026-11-02T09:28:22.895Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000066|2026-11-02T09:28:24.098Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000070|2026-11-02T09:28:24.099Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000067|2026-11-02T09:28:24.298Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000071|2026-11-02T09:28:24.299Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000072|2026-11-02T09:28:25.100Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000069|2026-11-02T09:28:27.515Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000072|2026-11-02T09:28:27.516Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000073|2026-11-02T09:28:27.916Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000070|2026-11-02T09:28:28.718Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000073|2026-11-02T09:28:28.718Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000071|2026-11-02T09:28:28.918Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000072|2026-11-02T09:28:32.159Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000073|2026-11-02T09:28:33.365Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000074|2026-11-02T09:28:56.595Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000074|2026-11-02T09:28:56.682Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000075|2026-11-02T09:28:56.844Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000075|2026-11-02T09:28:56.883Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000076|2026-11-02T09:28:57.096Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000076|2026-11-02T09:28:57.283Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000077|2026-11-02T09:28:57.345Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000078|2026-11-02T09:28:57.598Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000079|2026-11-02T09:28:57.850Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000080|2026-11-02T09:28:58.099Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000081|2026-11-02T09:28:58.349Z|QUEUED|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000076|2026-11-02T09:28:59.934Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000076|2026-11-02T09:28:59.934Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000077|2026-11-02T09:28:59.934Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000074|2026-11-02T09:29:00.935Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000074|2026-11-02T09:29:00.941Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000078|2026-11-02T09:29:00.941Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000075|2026-11-02T09:29:01.136Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000075|2026-11-02T09:29:01.136Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000079|2026-11-02T09:29:01.137Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000078|2026-11-02T09:29:02.539Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000080|2026-11-02T09:29:02.540Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000077|2026-11-02T09:29:03.141Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000081|2026-11-02T09:29:03.141Z|BREWING|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000079|2026-11-02T09:29:03.542Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000076|2026-11-02T09:29:04.545Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000077|2026-11-02T09:29:04.545Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000074|2026-11-02T09:29:05.551Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000078|2026-11-02T09:29:05.551Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000075|2026-11-02T09:29:05.751Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000079|2026-11-02T09:29:05.751Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000080|2026-11-02T09:29:06.551Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000077|2026-11-02T09:29:09.210Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000080|2026-11-02T09:29:09.211Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000081|2026-11-02T09:29:09.613Z|READY|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000078|2026-11-02T09:29:10.212Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000081|2026-11-02T09:29:10.212Z|DELIVERING|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000079|2026-11-02T09:29:10.413Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000080|2026-11-02T09:29:13.817Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000081|2026-11-02T09:29:14.877Z|SERVED|sim_kem_dau|Kem Dâu|27|Trà Hoa Đăng|1|2000
+O000082|2026-11-02T09:46:55.787Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000082|2026-11-02T09:46:55.843Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000083|2026-11-02T09:46:56.038Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000083|2026-11-02T09:46:56.046Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000084|2026-11-02T09:46:56.290Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000084|2026-11-02T09:46:56.447Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000085|2026-11-02T09:46:56.541Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000086|2026-11-02T09:46:56.797Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000087|2026-11-02T09:46:57.043Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000088|2026-11-02T09:46:57.294Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000089|2026-11-02T09:46:57.549Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000090|2026-11-02T09:46:57.803Z|QUEUED|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000084|2026-11-02T09:46:59.052Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000084|2026-11-02T09:46:59.053Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000085|2026-11-02T09:46:59.053Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000082|2026-11-02T09:47:00.133Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000082|2026-11-02T09:47:00.134Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000086|2026-11-02T09:47:00.134Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000083|2026-11-02T09:47:00.334Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000083|2026-11-02T09:47:00.334Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000087|2026-11-02T09:47:00.335Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000086|2026-11-02T09:47:01.737Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000088|2026-11-02T09:47:01.737Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000085|2026-11-02T09:47:01.936Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000089|2026-11-02T09:47:01.937Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000087|2026-11-02T09:47:02.337Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000090|2026-11-02T09:47:02.337Z|BREWING|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000084|2026-11-02T09:47:03.747Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000085|2026-11-02T09:47:03.748Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000082|2026-11-02T09:47:04.751Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000086|2026-11-02T09:47:04.752Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000083|2026-11-02T09:47:04.951Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000087|2026-11-02T09:47:04.952Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000088|2026-11-02T09:47:05.351Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000089|2026-11-02T09:47:07.371Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000090|2026-11-02T09:47:08.036Z|READY|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000085|2026-11-02T09:47:08.436Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000088|2026-11-02T09:47:08.436Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000086|2026-11-02T16:45:12.124Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000087|2026-11-02T16:45:12.124Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000088|2026-11-02T16:45:12.124Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000086|2026-11-02T16:45:13.725Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000086|2026-11-02T16:45:13.725Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000089|2026-11-02T16:45:13.725Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000087|2026-11-02T16:45:14.124Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000087|2026-11-02T16:45:14.125Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000090|2026-11-02T16:45:14.125Z|BREWING|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000088|2026-11-02T16:45:15.727Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000088|2026-11-02T16:45:15.727Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000086|2026-11-02T16:45:18.332Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000087|2026-11-02T16:45:18.733Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000089|2026-11-02T16:45:19.133Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000089|2026-11-02T16:45:19.134Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000090|2026-11-02T16:45:19.734Z|READY|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000090|2026-11-02T16:45:19.734Z|DELIVERING|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000088|2026-11-02T16:45:20.335Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000089|2026-11-02T16:45:23.743Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000090|2026-11-02T16:45:24.345Z|SERVED|sim_dai_gia|Đại Gia|30|Đại Tiệc Toàn Quán|1|5000
+O000091|2026-11-02T16:45:41.807Z|QUEUED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000091|2026-11-02T16:45:41.815Z|BREWING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000092|2026-11-02T16:45:42.031Z|QUEUED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000092|2026-11-02T16:45:42.217Z|BREWING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000093|2026-11-02T16:45:42.283Z|QUEUED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000093|2026-11-02T16:45:42.418Z|BREWING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000094|2026-11-02T16:45:42.533Z|QUEUED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000095|2026-11-02T16:45:42.786Z|QUEUED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000096|2026-11-02T16:45:43.036Z|QUEUED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000097|2026-11-02T16:45:43.289Z|QUEUED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000098|2026-11-02T16:45:43.539Z|QUEUED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000093|2026-11-02T16:45:45.029Z|READY|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000093|2026-11-02T16:45:45.030Z|DELIVERING|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000094|2026-11-02T16:45:45.030Z|BREWING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000091|2026-11-02T16:45:46.029Z|READY|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000091|2026-11-02T16:45:46.030Z|DELIVERING|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000095|2026-11-02T16:45:46.030Z|BREWING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000092|2026-11-02T16:45:46.430Z|READY|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000092|2026-11-02T16:45:46.430Z|DELIVERING|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000096|2026-11-02T16:45:46.430Z|BREWING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000095|2026-11-02T16:45:47.631Z|READY|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000097|2026-11-02T16:45:47.631Z|BREWING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000094|2026-11-02T16:45:48.233Z|READY|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000098|2026-11-02T16:45:48.234Z|BREWING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000096|2026-11-02T16:45:48.835Z|READY|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000093|2026-11-02T16:45:49.636Z|SERVED|sim_linh_chi|Linh Chi|18|Cheesecake dâu|1|200
+O000094|2026-11-02T16:45:49.636Z|DELIVERING|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000091|2026-11-02T16:45:50.639Z|SERVED|sim_mai_anh|Mai Anh|11|Trà sữa truyền thống|1|50
+O000095|2026-11-02T16:45:50.640Z|DELIVERING|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000092|2026-11-02T16:45:51.039Z|SERVED|sim_bo_bo|Bo Bo|13|Trà sữa đường đen|1|99
+O000096|2026-11-02T16:45:51.040Z|DELIVERING|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000097|2026-11-02T16:45:51.640Z|READY|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000094|2026-11-02T16:45:54.273Z|SERVED|sim_hoang_long|Hoàng Long|26|Trà Sữa Kim Cương|1|1000
+O000097|2026-11-02T16:45:54.273Z|DELIVERING|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000098|2026-11-02T16:45:54.674Z|READY|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000095|2026-11-02T16:45:55.275Z|SERVED|sim_gau_bong|Gấu Bông|3|Trà đá chanh|1|5
+O000098|2026-11-02T16:45:55.275Z|DELIVERING|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000
+O000096|2026-11-02T16:45:55.676Z|SERVED|sim_na_na|Na Na|7|Trà đào cam sả|1|20
+O000097|2026-11-02T16:45:58.912Z|SERVED|sim_tra_my|Trà My|20|Combo Hẹn Hò|1|300
+O000098|2026-11-02T16:45:59.915Z|SERVED|sim_kem_dau|Kem Dâu|28|Siêu Ly Khổng Lồ|1|2000

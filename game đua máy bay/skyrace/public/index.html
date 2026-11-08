@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đua Máy Bay</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232f7cf6'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle'%3E%E2%9C%88%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="scene"></canvas>
+<canvas id="speed"></canvas>
+<div id="flash"></div>
+<div id="fade"></div>
+<div id="app">
+  <div id="labels"></div>
+  <header id="top">
+    <div class="brand"><span class="logo">✈️</span><div><b>ĐUA MÁY BAY</b><small><span id="raceNo">Cuộc đua #1</span> · <span id="mapTag"></span></small></div></div>
+    <div id="status"></div>
+    <div class="pills">
+      <span class="pill" id="viewers">👀 0</span>
+      <span class="pill" id="live">Chưa nối TikTok</span>
+      <button class="pill btn" id="musicBtn" title="Nhạc nền">🎵</button>
+      <button class="pill btn" id="soundBtn" title="Âm thanh">🔈</button>
+    </div>
+  </header>
+  <div id="board" class="panel"></div>
+  <canvas id="minimap"></canvas>
+  <div id="skills" class="panel"></div>
+  <div id="camTag" hidden></div>
+  <div id="pip" hidden><div class="pv"></div><div class="pl">🥇 TOP 1 · <b id="pipName"></b></div></div>
+  <div id="pops"></div>
+  <div id="feed"></div>
+  <div id="howto" class="panel"></div>
+  <div id="records" class="panel"></div>
+  <div id="center" hidden></div>
+  <div id="toast" hidden></div>
+  <div id="caption" hidden></div>
+  <div id="vig"></div>
+  <div id="result" hidden></div>
+  <div id="result2" hidden></div>
+  <div id="sim" hidden>
+    <button id="simToggle" class="simToggle">🧪 Điều khiển &amp; thử</button>
+    <div id="simBody" class="panel"></div>
+  </div>
+  <div id="fair">Trò chơi giải trí · Quà tặng tự nguyện, không đổi ra tiền hay phần thưởng · Máy bay AI có nhãn AI</div>
+  <div id="offline" hidden>Mất kết nối server, đang thử lại…</div>
+  <div id="unlock" hidden>🔈 Bấm vào màn hình để bật âm thanh</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

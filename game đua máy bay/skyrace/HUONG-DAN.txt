@@ -1,0 +1,68 @@
+ĐUA MÁY BAY – game đua máy bay 3D cho TikTok LIVE
+
+CHẠY
+  Cách nhanh: bấm đúp dua-may-bay.cmd (tự cài, tự build, mở server và cửa sổ LIVE 9:16).
+  Hoặc:  cd skyrace  →  npm install  →  npm start
+  Trang điều khiển:   http://localhost:3200          (nối TikTok, bảng thử, cài đặt, chọn bản đồ)
+  Màn hình LIVE 9:16: http://localhost:3200/?live=1  (TikTok LIVE Studio: Add source → Window capture)
+  Xưởng máy bay:      http://localhost:3200/hangar.html  (xem 10 mẫu, bấm thử hoạt ảnh; ?p=fighter để xem một mẫu)
+  Máy yếu: thêm &lite vào đường dẫn LIVE (ít cây, mây, hạt, bóng đổ nhẹ hơn).
+
+NỐI TIKTOK
+  Trang điều khiển → ô "username TikTok" → Kết nối (đang live mới nối được). Không cần mật khẩu.
+  Đang nối TikTok thật thì bảng thử bị khóa để live không hiện quà giả.
+
+NGƯỜI XEM CHƠI THẾ NÀO
+  Gõ 1 (hoặc "vào", "bay")   vào đua — tap tym hoặc follow kênh cũng tự vào đua
+  Gõ "xem" (hoặc "soi")      máy quay soi máy bay của bạn 7 giây (nhiều người thì xếp lượt; 12 giây gõ được một lần)
+  Gõ tên máy bay             dua, tiemkich (f16), chokhach (boeing), canhquat, sieuthanh (concorde),
+                             tunhan, vantai (c130), nhaolon, tuonglai
+  Gõ màu                     đỏ, cam, vàng, xanh lá, xanh, tím, hồng, trắng, đen, bạc
+  Tap tym (thả tim)          2 tym = 0,1 hoa hồng: tăng tốc nhẹ 0,3 giây (20 tym = 1 hoa hồng = 3 giây)
+                             chia sẻ live = 1 hoa hồng
+  Tặng quà                   tự vào đua và dùng skill theo số xu của MỘT món quà:
+     1 xu    💨 Tăng tốc nhẹ          +25% tốc độ 3 giây
+     5 xu    ⚙️ Tăng tốc động cơ      +50% tốc độ 4 giây, khói trắng
+     10 xu   🔥 Boost                 +90% tốc độ 4 giây, lửa phản lực, xoay thùng
+     20 xu   🎯 Tên lửa               bắn choáng máy bay ngay phía trước
+     30 xu   ⚡ Sét đánh              đánh chậm Top 3 trong 4 giây
+     50 xu   🚀 Tên lửa tăng tốc      gắn tên lửa đẩy dưới bụng, +160% 3 giây
+     99 xu   🌟 Siêu Boost            +120% 6 giây kèm khiên
+     199 xu  💣 Bom tấn               ném bom người dẫn đầu
+     299 xu  🛩️ Chế độ phản lực       đốt sau cực đại + khiên 10 giây
+     500 xu  ☄️ Mưa thiên thạch       cả đường đua bị chậm, bạn siêu tốc + khiên
+     999 xu  👑 Triệu hồi máy bay VIP đổi sang máy bay mạ vàng tới hết cuộc đua, phi đội hộ tống bay kèm,
+                                      siêu tốc 12 giây, khiên 15 giây, nhào vòng ăn mừng
+  Quà combo x5 = dùng skill 5 lần (tối đa 10 lần, dư thì cộng thời gian).
+  Tặng lúc chưa xuất phát: skill được cất kho, xuất phát là bung ra. Quà không bao giờ mất.
+
+10 MẪU MÁY BAY
+  Máy bay đua, Tiêm kích, Chở khách, Cánh quạt cổ điển, Siêu thanh, Phản lực tư nhân, Vận tải quân sự,
+  Nhào lộn, Tương lai, VIP mạ vàng (chỉ có khi tặng 999 xu). Mỗi người chơi có màu sơn, số hiệu, logo riêng.
+  Muốn thay bằng model GLB thật: xem models/DOC-TRUOC.txt.
+
+5 BẢN ĐỒ (tự đổi mỗi cuộc đua, hoặc chọn cố định ở Cài đặt)
+  🏝️ Đảo nhiệt đới · 🏔️ Núi tuyết · 🌆 Thành phố hiện đại (hoàng hôn) · 🌴 Hẻm núi rừng rậm · 🏜️ Sa mạc
+  Trên đường bay: vòng checkpoint (bay qua loé sáng), cổng tăng tốc xanh lá (bay qua được đẩy), bãi mìn
+  (thỉnh thoảng có người va, choáng nhẹ; có khiên thì không sao), cổng đường tắt mạo hiểm bên phải
+  (35% máy bay liều đi: vượt lên 325–375 m nhưng 30% đâm vào vách).
+
+CUỘC ĐUA
+  Chờ 25 giây (cuộc sau 15 giây) → đếm 3-2-1 → lăn trên đường băng, cất cánh → 1 vòng dài 25–33 km (chừng 7–8 phút)
+  → người đầu tiên về đích là kết thúc ngay → vinh danh nhà vô địch 16 giây (hạng 2, 3 theo vị trí lúc đó) → cuộc mới.
+  Vào giữa chừng: xuất phát từ vạch đầu đường băng (cất cánh như mọi người), không tính kỷ lục. 15 phút không tương tác thì rời đường đua.
+  Máy bay AI (nhãn AI) lấp cho đủ số tối thiểu, nhường chỗ khi có người thật, không lên bảng kỷ lục.
+  Chưa có người xem nào vào thì không xuất phát.
+  Kỷ lục, vô địch, top quà hôm nay lưu ở data/records.json.
+
+Giọng bình luận viên dùng dịch vụ đọc của Edge/Google (cần Internet), tắt ở Cài đặt.
+Cổng khác: $env:PORT=3201; npm start
+
+ÂM THANH HIỆU ỨNG
+  Tiếng nổ bom, tăng tốc, động cơ, tên lửa, khiên, sét, nhận quà... là file CC0 trong public/sfx/
+  (nguồn: Kenney, OpenGameArt – xem public/sfx/NGUON-AM-THANH.txt). Muốn thay thì chép file .ogg cùng tên đè lên.
+
+NHẠC NỀN
+  Có sẵn nhạc CC0 (public/bgm/, nguồn: public/bgm/NGUON-NHAC.txt), tự đổi theo giai đoạn:
+  chuẩn bị / đếm ngược → đang đua (2 bài luân phiên) → chặng cuối (dẫn đầu qua 85% đường, nhạc cao trào) → vinh danh.
+  Nhạc riêng thả vào skyrace/music/ sẽ thay nhạc lúc đang đua. Nút 🎵 để tắt / bật.

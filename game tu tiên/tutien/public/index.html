@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tu Tiên Đại Chiến</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23201538'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle'%3E%E2%98%AF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="scene"></canvas>
+<div id="flash"></div>
+<div id="app">
+  <header id="top">
+    <div class="brand"><span class="logo">☯</span><div><b>TU TIÊN ĐẠI CHIẾN</b><small id="modeTitle">Tu Luyện</small></div></div>
+    <div class="pills"><span class="pill" id="modeTime"></span><span class="pill" id="viewers">👥 0</span><span class="pill" id="live">Chưa nối TikTok</span>
+      <button class="pill btn" id="musicBtn" title="Nhạc nền">🎵</button><button class="pill btn" id="soundBtn" title="Âm thanh">🔈</button></div>
+  </header>
+  <div id="bossbar" hidden>
+    <div class="bn"><b id="bossName"></b><span id="bossPhase"></span><span id="bossHp"></span></div>
+    <div class="track"><div id="bossFill"></div></div>
+    <div id="bossTop"></div>
+  </div>
+  <div id="sides" hidden></div>
+  <div id="board" class="panel"></div>
+  <div id="gifts" class="panel"></div>
+  <div id="banners"></div>
+  <div id="feed"></div>
+  <div id="nums"></div>
+  <div id="center" hidden></div>
+  <div id="howto"></div>
+  <div id="fair">Trò chơi giải trí · Quà tặng tự nguyện, không đổi ra tiền hay phần thưởng thật · NPC có nhãn NPC</div>
+  <div id="offline" hidden>Mất kết nối server, đang thử lại…</div>
+  <div id="unlock" hidden>🔈 Bấm vào màn hình để bật âm thanh</div>
+  <div id="sim" hidden>
+    <button id="simToggle" class="simToggle">🧪 Điều khiển &amp; thử</button>
+    <div id="simBody" class="panel">
+      <div class="sec"><b>TikTok LIVE</b>
+        <div class="r"><input id="ttUser" placeholder="username TikTok"><button id="ttConnect" class="pri">Kết nối</button><button id="ttDisconnect">Ngắt</button></div></div>
+      <div class="sec"><b>Người thử</b>
+        <div class="r"><select id="simWho"></select><button id="simJoin">+5 tu sĩ</button><button id="simLike">❤ x30</button></div>
+        <div class="r"><input id="simText" placeholder="bình luận: 1, kiem, tong 2, pk, doat…"><button id="simSend">Gửi</button></div>
+        <div class="r" id="simQuick"></div></div>
+      <div class="sec"><b>Tặng quà</b><div class="r wrap" id="simGifts"></div></div>
+      <div class="sec"><b>Chế độ</b><div class="r wrap">
+        <button data-mode="next">⏭ Tiếp theo</button><button data-mode="boss">🐉 Boss</button><button data-mode="pk1">⚔️ PK 1vs1</button><button data-mode="pk3">👥 PK 3vs3</button><button data-mode="sect">🏯 Tông môn</button><button data-mode="treasure">💎 Đoạt bảo</button></div></div>
+      <div class="sec"><b>Cài đặt</b><div class="r"><label><input type="checkbox" id="setVoice"> Giọng bình luận</label><label>NPC <input type="number" id="setNpc" min="0" max="16" style="width:56px"></label><button id="clearSim">Xoá người thử</button></div>
+        <div class="r"><a href="/?live=1" target="_blank" id="openLive">📺 Mở cửa sổ LIVE 9:16</a></div></div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "game-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cổng quản lý game TikTok LIVE: đăng nhập tài khoản do admin cấp, sổ xu theo ngày, chạy game trên máy chủ",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "build-games": "node tools/build-games.mjs",
+    "shoot-guides": "node tools/shoot-guides.mjs",
+    "test": "node --test test/"
+  }
+}

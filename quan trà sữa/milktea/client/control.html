@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Điều khiển quán trà sữa</title>
+<link rel="icon" href="/favicon.svg">
+<style>
+  :root { --bg: #f6f1ea; --card: #fff; --ink: #3b2a20; --mute: #8a6a55; --mint: #4fb393; --pink: #e05a85; --line: #eadfd2; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.45 system-ui, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+  main { max-width: 980px; margin: 0 auto; padding: 20px 16px 40px; display: grid; gap: 14px; }
+  h1 { margin: 0; font-size: 22px; } h2 { margin: 0 0 10px; font-size: 16px; }
+  section { background: var(--card); border-radius: 14px; padding: 14px 16px; border: 1px solid var(--line); }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  input, select { font: inherit; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+  button { font: inherit; padding: 7px 14px; border-radius: 8px; border: 0; background: var(--mint); color: #fff; font-weight: 600; cursor: pointer; }
+  button.alt { background: #efe7dc; color: var(--ink); } button.pink { background: var(--pink); }
+  #status { font-weight: 700; padding: 3px 10px; border-radius: 999px; background: #ddd; }
+  #status.connected { background: #ff2d55; color: #fff; } #status.simulated { background: #7a5af5; color: #fff; } #status.reconnecting, #status.connecting { background: #f39c12; color: #fff; }
+  #log { height: 240px; overflow: auto; background: #2b2230; color: #f2e9ff; border-radius: 10px; padding: 10px; font: 12.5px/1.5 ui-monospace, Consolas, monospace; white-space: pre-wrap; }
+  .gifts { display: flex; flex-wrap: wrap; gap: 6px; }
+  .gifts button { background: #fff3cf; color: #6b4a00; border: 1px solid #f1d27a; padding: 5px 10px; }
+  .note { color: var(--mute); font-size: 13px; margin: 6px 0 0; }
+  .warn { background: #fff4d6; border: 1px solid #f1d27a; border-radius: 8px; padding: 8px 10px; margin: 10px 0 0; }
+  button:disabled, input:disabled { opacity: .5; cursor: not-allowed; }
+  [hidden] { display: none !important; }
+  label { display: inline-flex; align-items: center; gap: 6px; margin-right: 10px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="row"><h1 id="brandName">🧋 Quán Trà Sữa Liên Quân</h1><span id="status">…</span><span style="margin-left:auto" class="row"><button id="open916">Mở màn hình dọc 9:16</button><button id="open169" class="alt">Mở màn hình ngang 16:9</button></span></div>
+
+  <section id="liveBox">
+    <h2>Kết nối TikTok LIVE</h2>
+    <div class="row">
+      <input id="user" placeholder="@username của kênh đang live" style="flex:1">
+      <button id="connect">Kết nối</button><button id="disconnect" class="alt">Ngắt</button>
+    </div>
+    <p class="note">Chỉ đọc sự kiện công khai của phòng live. Không cần mật khẩu hay cookie. Rớt mạng sẽ tự nối lại cho tới khi bấm Ngắt.</p>
+    <p class="warn" id="simNote" hidden>Server đang chạy <b>chế độ giả lập</b> nên chưa kết nối TikTok được. Tắt cửa sổ server rồi chạy <code>npm start</code> trong thư mục <code>milktea</code> (hoặc nhấp đúp <code>mo-tra-sua.cmd</code>), sau đó tải lại trang này.</p>
+  </section>
+
+  <section id="soundBox">
+    <h2>Âm thanh</h2>
+    <div class="row">
+      <label><input type="checkbox" data-k="voice"> Giọng tiếp viên đọc tên</label>
+      <label><input type="checkbox" data-k="welcome"> Chào khách mới</label>
+      <label><input type="checkbox" data-k="music"> Nhạc nền</label>
+      <label><input type="checkbox" data-k="ambience"> Tiếng nền quán</label>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <label>Giọng <input type="range" min="0" max="100" data-k="voiceVol"></label>
+      <label>Nhạc <input type="range" min="0" max="100" data-k="musicVol"></label>
+      <label>Hiệu ứng <input type="range" min="0" max="100" data-k="sfxVol"></label>
+      <button id="testVoice" class="alt">Thử giọng</button>
+    </div>
+    <p class="note">Tiếng phát ở cửa sổ màn hình game (cửa sổ bạn đưa vào TikTok LIVE Studio). Giọng đọc cần Internet. Nhạc nền tự tạo, không dùng bài hát có bản quyền.</p>
+  </section>
+
+  <section id="simBox" hidden>
+    <h2>TikTok LIVE Simulator <small style="color:var(--mute)">(dữ liệu ở data-sim/, không ảnh hưởng quán thật)</small></h2>
+    <div class="row">
+      <input id="simName" placeholder="Tên khách (để trống = ngẫu nhiên)">
+      <button id="join" class="alt">Vào quán</button><button id="like" class="alt">Thả tim</button><button id="share" class="alt">Chia sẻ</button>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <input id="simText" placeholder='Bình luận, ví dụ "gọi 12"' style="flex:1"><button id="comment" class="alt">Bình luận</button>
+    </div>
+    <p class="note">Thử quà (xu):</p>
+    <div class="gifts" id="gifts"></div>
+    <div class="row" style="margin-top:10px">
+      <button id="crowd20" class="alt">Đổ 20 khách</button><button id="crowd80" class="alt">Đổ 80 khách</button>
+      <select id="pace"><option value="2500">Bot chậm</option><option value="1200" selected>Bot vừa</option><option value="350">Bot dồn dập</option></select>
+      <button id="bots" class="pink">Bật bot</button>
+    </div>
+  </section>
+
+  <section><h2>Nhật ký</h2><div id="log"></div></section>
+</main>
+<script type="module">
+  import { MENU } from '/shared/menu.mjs';
+  import { SHOP_NAME } from '/shared/brand.mjs';
+  document.title = `Điều khiển ${SHOP_NAME}`; document.querySelector('#brandName').textContent = `🧋 ${SHOP_NAME}`;
+  const $ = s => document.querySelector(s);
+  let ws, botsOn = false;
+  const send = m => ws?.readyState === 1 && ws.send(JSON.stringify(m));
+  const log = line => { const box = $('#log'); box.textContent += line + '\n'; box.scrollTop = box.scrollHeight; };
+  const setStatus = st => { const s = $('#status'); s.textContent = { connected: `LIVE @${st.uniqueId}`, simulated: 'GIẢ LẬP', reconnecting: `Đang nối lại${st.retryIn ? ` (${st.retryIn}s)` : ''}`, connecting: 'Đang kết nối', error: 'Lỗi: ' + st.error, idle: 'Chưa kết nối' }[st.status] || st.status; s.className = st.status; };
+  function connect() {
+    ws = new WebSocket(`ws://${location.host}/ws?role=control`);
+    ws.onmessage = e => {
+      const m = JSON.parse(e.data);
+      if (m.t === 'state') { $('#simBox').hidden = m.mode !== 'sim'; const sim = m.mode === 'sim'; $('#simNote').hidden = !sim; for (const id of ['#user', '#connect', '#disconnect']) $(id).disabled = sim; setStatus(m.tiktok); $('#log').textContent = ''; (m.logs || []).forEach(log); showSettings(m.settings); }
+      else if (m.t === 'tiktok') setStatus(m);
+      else if (m.t === 'settings') showSettings(m.settings);
+      else if (m.t === 'log') log(m.line);
+      else if (m.t === 'bots') { botsOn = m.on; $('#bots').textContent = botsOn ? 'Tắt bot' : 'Bật bot'; }
+    };
+    ws.onclose = () => setTimeout(connect, 1500);
+  }
+  connect();
+  // Âm thanh: mỗi lần đổi gửi ngay lên server, server lưu lại và báo cho cửa sổ game
+  function showSettings(st = {}) {
+    for (const el of document.querySelectorAll('#soundBox [data-k]')) if (el.dataset.k in st) el[el.type === 'checkbox' ? 'checked' : 'value'] = st[el.dataset.k];
+  }
+  for (const el of document.querySelectorAll('#soundBox [data-k]')) {
+    el.addEventListener(el.type === 'range' ? 'input' : 'change', () => send({ cmd: 'settings', settings: { [el.dataset.k]: el.type === 'checkbox' ? el.checked : +el.value } }));
+  }
+  $('#testVoice').onclick = () => send({ cmd: 'testVoice' });
+  // Mở cửa sổ game đúng tỉ lệ; khung bên trong luôn giữ tỉ lệ dù kéo giãn cửa sổ
+  const openStage = (ratio, w, h) => window.open(`/?ratio=${ratio}`, `stage${ratio.replace(':', 'x')}`, `popup,width=${w},height=${h}`);
+  $('#open916').onclick = () => openStage('9:16', 540, 960);
+  $('#open169').onclick = () => openStage('16:9', 1280, 720);
+  const name = () => $('#simName').value.trim();
+  $('#connect').onclick = () => send({ cmd: 'connect', uniqueId: $('#user').value });
+  $('#disconnect').onclick = () => send({ cmd: 'disconnect' });
+  $('#join').onclick = () => send({ cmd: 'simJoin', name: name() });
+  $('#like').onclick = () => send({ cmd: 'simLike', name: name() });
+  $('#share').onclick = () => send({ cmd: 'simShare', name: name() });
+  $('#comment').onclick = () => send({ cmd: 'simComment', name: name(), text: $('#simText').value });
+  $('#crowd20').onclick = () => send({ cmd: 'simCrowd', n: 20 });
+  $('#crowd80').onclick = () => send({ cmd: 'simCrowd', n: 80 });
+  $('#bots').onclick = () => send({ cmd: 'simBots', on: !botsOn, every: +$('#pace').value });
+  for (const coins of [...new Set(MENU.map(m => m.coins))]) {
+    const b = document.createElement('button');
+    b.textContent = `${coins.toLocaleString('vi-VN')} xu`;
+    b.onclick = () => send({ cmd: 'simGift', name: name(), coins });
+    $('#gifts').append(b);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+NHẠC NỀN CÓ SẴN (giấy phép CC0 – Public Domain: dùng tự do, kể cả livestream, không bắt buộc ghi nguồn)
+Tác giả: MintoDog, đăng trên OpenGameArt.org
+
+  lobby.ogg    ← joyful_jungle_bpm140.ogg            https://opengameart.org/content/joyful-jungle
+  race-1.ogg   ← pure_raceway_bpm160.ogg             https://opengameart.org/content/pure-raceway
+  race-2.ogg   ← sky_blue_street_bpm165.ogg          https://opengameart.org/node/170985
+  final.ogg    ← pure_raceway_climax_bpm175.ogg      https://opengameart.org/content/pure-raceway
+  victory.ogg  ← sky_blue_street_climax_bpm180.ogg   https://opengameart.org/node/170985
+
+lobby: lúc chuẩn bị / đếm ngược · race-1, race-2: đang đua (phát luân phiên) · final: chặng cuối (dẫn đầu qua 85% đường)
+victory: màn vinh danh nhà vô địch. Đã chuẩn hoá âm lượng (loudnorm). Thay file cùng tên để đổi nhạc.
+Nhạc riêng thả vào skyrace/music/ sẽ được dùng thay cho race-1, race-2 lúc đang đua.

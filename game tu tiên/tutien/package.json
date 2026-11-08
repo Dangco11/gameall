@@ -1,0 +1,34 @@
+{
+  "name": "tu-tien-dai-chien",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tu Tiên Đại Chiến: thế giới tu tiên 3D cho TikTok LIVE, tu luyện, đột phá cảnh giới, PK, đánh Boss, pháp bảo",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "esbuild src/client/main.ts --bundle --minify --sourcemap --target=es2020 --outfile=public/app.js --log-level=warning",
+    "start": "npm run build && node src/server/main.ts",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "models": "node tools/make-characters.ts && node tools/make-bosses.ts && node tools/make-world.ts",
+    "models:characters": "node tools/make-characters.ts",
+    "models:bosses": "node tools/make-bosses.ts",
+    "models:world": "node tools/make-world.ts"
+  },
+  "dependencies": {
+    "msedge-tts": "2.1.1",
+    "three": "0.170.0",
+    "tiktok-live-connector": "2.5.0",
+    "ws": "8.18.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.2.1",
+    "@types/node": "22.19.0",
+    "@types/three": "0.170.0",
+    "@types/ws": "8.18.1",
+    "esbuild": "0.24.2",
+    "typescript": "5.8.3"
+  }
+}

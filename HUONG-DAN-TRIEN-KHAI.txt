@@ -1,0 +1,46 @@
+BẢN BUILD CỔNG GAME TIKTOK LIVE (8/11/2026)
+=====================================================================
+Gồm: portal (trang người dùng + trang admin + cổng chơi) và 10 game:
+  - Tu Tiên Đại Chiến
+  - Bức Tường Graffiti
+  - Đua Máy Bay
+  - Quán Bar Online
+  - Live Print Studio
+  - Đại Chiến Nhà Trai – Nhà Gái
+  - Đám Cưới Làng Quê
+  - Quán Trà Sữa
+  - Quán Nhậu Đêm
+  - Đẩy Xe 2 Phe
+Thư viện chạy đã cài sẵn (node_modules), client game đã build nén, đã xoá sourcemap. Không có dữ liệu người dùng cũ.
+
+YÊU CẦU
+  - Node.js 22.18 trở lên (Linux hoặc Windows). Kiểm tra: node -v
+  - Máy chủ ra được Internet (nối TikTok LIVE, giọng đọc Microsoft Edge TTS).
+
+CHẠY THỬ
+  Linux:   chmod +x start.sh && ./start.sh
+  Windows: bấm đúp start.cmd
+  Lần chạy đầu cửa sổ dòng lệnh in mật khẩu tài khoản admin (hoặc đặt trước: ADMIN_PASSWORD=... ./start.sh).
+  - Trang người dùng: http://IP-may-chu:8080   (gửi link này cho khách)
+  - Cổng chơi game:   http://IP-may-chu:8081   (portal tự dùng, khách không cần nhớ)
+  - Trang admin:      http://localhost:9090     (chỉ mở được trên chính máy chủ / qua đường hầm SSH)
+  Mặc định portal chỉ nghe 127.0.0.1. Muốn khách vào thẳng bằng IP (không nginx): HOST=0.0.0.0 ./start.sh
+  và mở tường lửa cổng 8080, 8081.
+
+ĐƯA LÊN MẠNG BẰNG TÊN MIỀN (khuyên dùng)
+  1. Chép cả thư mục này lên máy chủ (vd /opt/cong-game).
+  2. Trỏ 2 tên miền con về máy chủ: game.ten-mien.vn (trang người dùng), play.ten-mien.vn (chơi game).
+  3. Cài nginx, dùng mẫu nginx-mau.conf, xin HTTPS bằng certbot.
+  4. Sửa ecosystem.config.cjs (PORTAL_ORIGIN, PLAY_ORIGIN, COOKIE_DOMAIN, TRUST_PROXY=1, ADMIN_PASSWORD) rồi:
+       npm i -g pm2 && pm2 start ecosystem.config.cjs && pm2 save && pm2 startup
+  5. Vào trang admin qua đường hầm SSH:  ssh -L 9090:127.0.0.1:9090 user@may-chu  → http://localhost:9090
+     Tạo tài khoản, cấp game, khoá tài khoản, đổi mật khẩu, xem doanh thu xu theo tài khoản / theo ngày.
+
+DỮ LIỆU (tự tạo trong portal/data/)
+  users.json (tài khoản), sessions.json, revenue/YYYY-MM-DD.json (sổ xu từng ngày), instances/ (dữ liệu game của từng tài khoản).
+  Sao lưu portal/data hằng ngày. Muốn mang tài khoản + sổ xu từ máy cũ sang: chép thư mục portal/data cũ vào đây.
+
+CÁC BIẾN MÔI TRƯỜNG HAY DÙNG
+  HOST (127.0.0.1) · PORTAL_PORT (8080) · PLAY_PORT (8081) · ADMIN_PORT (9090) · ADMIN_HOST (127.0.0.1)
+  PORTAL_ORIGIN / PLAY_ORIGIN · COOKIE_DOMAIN · TRUST_PROXY · ADMIN_PASSWORD · IDLE_MINUTES (20) · MAX_INSTANCES (50) · TZ_NAME
+  Chi tiết: portal/README.md

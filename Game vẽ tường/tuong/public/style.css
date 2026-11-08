@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #9fc8ee; color: #fff; font: 14px/1.35 "Segoe UI", system-ui, sans-serif; }
+#scene { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+#app { position: fixed; inset: 0; pointer-events: none; }
+#app button, #app input, #app select, #app a, #sim { pointer-events: auto; }
+.t { text-shadow: 0 1px 2px #000, 0 0 4px #000; }
+#top { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; align-items: center; gap: 8px; }
+.brand { display: flex; align-items: center; gap: 8px; padding: 4px 12px 4px 5px; border-radius: 12px; background: rgba(20, 10, 30, .55); border: 1px solid rgba(255, 255, 255, .25); }
+.brand .logo { width: 32px; height: 32px; display: grid; place-items: center; font-size: 20px; border-radius: 9px; background: linear-gradient(135deg, #ff2d55, #ffd60a); }
+.brand b { display: block; font-size: 14px; font-weight: 900; letter-spacing: .05em; background: linear-gradient(90deg, #ff4fc3, #ffd60a, #3ddc5a, #1fa2ff); -webkit-background-clip: text; background-clip: text; color: transparent; white-space: nowrap; }
+.brand small { display: block; font-size: 11px; color: #e8ecff; }
+.pills { margin-left: auto; display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+.pill { font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: 99px; background: rgba(10, 10, 25, .55); border: 1px solid rgba(255, 255, 255, .2); white-space: nowrap; color: #fff; }
+.pill.on { background: rgba(220, 30, 60, .85); }
+.pill.btn { cursor: pointer; }
+
+/* danh sách người vừa vẽ (góc trên trái) */
+#recent { position: absolute; left: 62px; top: 58px; display: flex; flex-direction: column; gap: 3px; max-width: 58vw; }
+#recent div { font-size: 11.5px; font-weight: 700; padding: 2px 9px 2px 7px; border-radius: 99px; background: rgba(20, 10, 40, .5); border: 1px solid rgba(255, 255, 255, .25); width: max-content; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-shadow: 0 1px 2px #000; }
+#recent div::before { content: '●'; color: #ffd60a; margin-right: 5px; }
+#recent em { font-style: normal; font-size: 10px; margin-left: 5px; padding: 0 6px; border-radius: 6px; background: linear-gradient(90deg, #ff8a1f, #ff2d55); }
+/* đếm tim */
+#likes { position: absolute; right: 62px; top: 58px; text-align: center; padding: 3px 9px; border-radius: 10px; background: rgba(20, 10, 40, .5); border: 1px solid rgba(255, 255, 255, .25); text-shadow: 0 1px 2px #000; }
+#likes b { display: block; font-size: 14px; } #likes small { font-size: 9px; letter-spacing: .15em; font-weight: 800; }
+/* bảng quà hai bên, trong suốt */
+.legend { position: absolute; top: 56px; display: flex; flex-direction: column; gap: 3px; width: 50px; }
+#legL { left: 6px; } #legR { right: 6px; }
+.lg { display: flex; flex-direction: column; align-items: center; padding: 3px 2px 2px; border-radius: 10px; background: rgba(20, 30, 70, .38); border: 1px solid rgba(255, 255, 255, .25); text-shadow: 0 1px 2px #000; }
+.lg i { font-style: normal; font-size: 20px; line-height: 1.1; }
+.lg b { font-size: 10px; color: #ffd60a; } .lg span { font-size: 8.5px; line-height: 1.1; text-align: center; color: #e8ecff; }
+/* TOP họa sĩ (dải dưới) */
+#board { position: absolute; left: 8px; right: 8px; bottom: 84px; display: flex; flex-wrap: wrap; gap: 3px 4px; justify-content: center; }
+#board .h { font-size: 11px; font-weight: 900; color: #ffd60a; padding: 2px 4px; text-shadow: 0 1px 2px #000; }
+#board .c { display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 1px 8px 1px 2px; border-radius: 99px; background: rgba(0, 0, 0, .3); text-shadow: 0 1px 2px #000; }
+#board .c img, #board .c .ph { width: 18px; height: 18px; border-radius: 50%; object-fit: cover; }
+#board .c .ph { display: grid; place-items: center; background: #ff2d55; font-size: 10px; }
+#board .c small { color: #ffd60a; }
+/* banner quà */
+#banners { position: absolute; left: 8px; bottom: 112px; width: min(320px, 70vw); display: flex; flex-direction: column; gap: 5px; }
+.banner { display: flex; align-items: center; gap: 8px; padding: 5px 10px 5px 5px; border-radius: 99px; background: linear-gradient(90deg, rgba(255, 45, 85, .85), rgba(255, 138, 31, .55)); border: 1px solid rgba(255, 255, 255, .35); animation: slide .35s ease-out; transition: opacity .5s, transform .5s; text-shadow: 0 1px 2px #000; }
+.banner.big { background: linear-gradient(90deg, rgba(163, 91, 255, .9), rgba(31, 162, 255, .6)); }
+.banner.vip { background: linear-gradient(90deg, rgba(255, 214, 10, .95), rgba(255, 45, 85, .8)); box-shadow: 0 0 24px rgba(255, 214, 10, .7); }
+.banner.out { opacity: 0; transform: translateX(-20px); }
+.banner img, .banner .ph { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
+.banner .ph { display: grid; place-items: center; background: #1fa2ff; font-weight: 900; }
+.banner b { display: block; font-size: 13px; } .banner span { font-size: 11px; }
+.banner .tier { margin-left: auto; font-weight: 900; font-size: 13px; white-space: nowrap; }
+@keyframes slide { from { transform: translateX(-40px); opacity: 0; } }
+#center { position: absolute; left: 0; right: 0; top: 32%; text-align: center; }
+#center .t1 { display: inline-block; font-size: clamp(24px, 6vw, 44px); font-weight: 900; color: #fff; text-shadow: 0 0 16px var(--c), 0 3px 0 #000, 0 0 30px var(--c); padding: 0 12px; }
+#center .s { font-size: clamp(14px, 3.4vw, 20px); font-weight: 800; margin-top: 4px; text-shadow: 0 2px 4px #000; }
+#center.pop .t1 { animation: pop .6s cubic-bezier(.2, 1.6, .4, 1); }
+@keyframes pop { from { transform: scale(.3) rotate(-8deg); opacity: 0; } }
+#howto { position: absolute; left: 8px; right: 8px; bottom: 22px; font-size: 10.5px; padding: 4px 9px; border-radius: 10px; background: rgba(10, 10, 30, .4); color: #f0f3ff; text-shadow: 0 1px 2px #000; }
+#howto b { color: #ffd60a; } #howto i { font-style: normal; font-weight: 800; color: #9fe8ff; }
+#offline, #unlock { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 12px 18px; border-radius: 12px; background: rgba(0, 0, 0, .8); font-weight: 700; }
+#unlock { pointer-events: auto; cursor: pointer; }
+/* bảng điều khiển (trang không có ?live=1) */
+.panel { background: rgba(14, 12, 30, .92); border: 1px solid rgba(255, 255, 255, .2); border-radius: 12px; }
+#sim { position: absolute; right: 64px; top: 120px; width: 340px; max-height: calc(100vh - 220px); display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.simToggle { padding: 7px 12px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, .4); background: rgba(255, 45, 85, .9); color: #fff; font-weight: 700; cursor: pointer; }
+#simBody { width: 100%; overflow: auto; padding: 8px; }
+#simBody.hide { display: none; }
+#simBody .sec { padding: 6px 0; border-bottom: 1px solid rgba(255, 255, 255, .08); }
+#simBody .sec > b { font-size: 12px; color: #ffd60a; }
+#simBody .r { display: flex; gap: 5px; margin-top: 5px; align-items: center; } #simBody .r.wrap { flex-wrap: wrap; }
+#simBody input, #simBody select { flex: 1; min-width: 0; padding: 6px 8px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, .2); background: rgba(0, 0, 0, .4); color: #fff; }
+#simBody button { padding: 6px 9px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, .2); background: rgba(255, 255, 255, .08); color: #fff; cursor: pointer; font-size: 12px; }
+#simBody button.pri { background: #c2185b; }
+#simBody label { font-size: 12px; display: flex; gap: 4px; align-items: center; }
+#simBody a { color: #9fe8ff; font-weight: 700; }
+body.live #sim { display: none !important; }
+@media (min-aspect-ratio: 4/3) { .legend { width: 64px; } .lg i { font-size: 24px; } #recent { left: 80px; } #likes { right: 80px; } }
+
+/* ---- kéo tương tác: mục tiêu tim chung, Mưa sơn, chào người mới, cảm ơn follow/share */
+#goal { position: absolute; left: 8px; right: 8px; bottom: 52px; height: 24px; border-radius: 99px; background: rgba(20, 10, 40, .55); border: 1px solid rgba(255, 255, 255, .3); overflow: hidden; }
+#goal .fill { position: absolute; inset: 0 auto 0 0; width: 0; background: linear-gradient(90deg, #ff2d55, #ff4fc3, #ffd60a); transition: width .6s; box-shadow: 0 0 14px rgba(255, 79, 195, .6); }
+#goal .txt { position: relative; line-height: 24px; text-align: center; font-size: 11.5px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0 8px; text-shadow: 0 1px 2px #000; }
+#goal small { font-size: 10px; font-weight: 700; opacity: .95; }
+#goal.hot { animation: hot .5s ease-in-out infinite alternate; }
+@keyframes hot { to { box-shadow: 0 0 18px #ff4fc3; border-color: #ffd60a; } }
+#lucky { position: absolute; left: 50%; top: 21%; transform: translateX(-50%); padding: 6px 14px; border-radius: 14px; text-align: center; background: linear-gradient(90deg, rgba(163, 91, 255, .9), rgba(255, 45, 85, .85)); border: 2px solid #ffd60a; box-shadow: 0 0 24px rgba(255, 214, 10, .55); text-shadow: 0 1px 2px #000; width: max-content; max-width: 92vw; }
+#lucky b { display: block; font-size: 17px; font-weight: 900; } #lucky span { font-size: 12px; font-weight: 700; } #lucky em { font-style: normal; color: #ffd60a; font-weight: 900; }
+#lucky.small { top: auto; bottom: 140px; left: auto; right: 8px; transform: none; padding: 2px 10px; border-width: 1px; box-shadow: none; background: rgba(20, 10, 40, .55); }
+#lucky.small b { font-size: 11px; display: inline; font-weight: 800; }
+#joins { position: absolute; left: 8px; bottom: 140px; display: flex; flex-direction: column; gap: 3px; }
+#joins div { font-size: 11px; font-weight: 700; padding: 2px 9px; border-radius: 99px; background: rgba(31, 162, 255, .45); text-shadow: 0 1px 2px #000; animation: slide .3s ease-out; transition: opacity .5s; width: max-content; max-width: 50vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#joins div.out { opacity: 0; }
+.banner.fan { background: linear-gradient(90deg, rgba(31, 162, 255, .9), rgba(25, 210, 160, .6)); }
+#howto { transition: opacity .4s; }

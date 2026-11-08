@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Đại Chiến Nhà Trai – Nhà Gái</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c8231d'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle'%3E%E2%9A%94%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;700;800;900&display=swap">
+<link rel="stylesheet" href="chien.css">
+</head>
+<body class="chien">
+<div id="app">
+  <canvas id="scene"></canvas>
+  <div id="plates"></div>
+  <div id="nums"></div>
+
+  <header id="hudTop">
+    <!-- màn dọc 9:16: thanh PK gọn (máu căn cứ hai bên, quỹ ở giữa, top 3 hai bên); màn ngang dùng bảng phe bên dưới -->
+    <div id="pk">
+      <div class="pkbar">
+        <div class="pkside trai"><span class="pkic">🤵</span><div class="hpb"><i></i><b>0</b></div></div>
+        <div class="pkmid"><small>Quỹ lực chiến</small><b id="pkPot">0</b></div>
+        <div class="pkside gai"><div class="hpb"><i></i><b>0</b></div><span class="pkic">👰</span></div>
+      </div>
+      <div class="pkrow">
+        <ol class="pktop trai" id="pkTop_trai"></ol>
+        <div class="pkcenter">
+          <div id="pkClock">⚔️</div>
+          <div class="pkscore"><b class="trai" id="pkS_trai">0</b><i>-</i><b class="gai" id="pkS_gai">0</b></div>
+          <div class="pknames"><span class="trai">NHÀ TRAI</span> <i>vs</i> <span class="gai">NHÀ GÁI</span></div>
+          <div class="pkcmd"><span class="trai">💬 <b>1</b> <em id="pkU_trai">0 quân</em></span><span class="gai"><em id="pkU_gai">0 quân</em> 💬 <b>2</b></span></div>
+          <div id="pkPhase"></div>
+        </div>
+        <ol class="pktop gai" id="pkTop_gai"></ol>
+      </div>
+    </div>
+    <section class="team trai" id="t_trai">
+      <div class="th"><span class="ic">🤵</span><div class="tnw"><b class="tn">NHÀ TRAI</b><small class="cmd">💬 Bình luận <b>1</b></small></div><div class="score"><b>0</b><small>xu</small></div></div>
+      <div class="units"></div>
+      <div class="bars"><div class="bar gate"><i></i><span></span></div><div class="bar house"><i></i><span></span></div></div>
+      <ol class="top"></ol>
+    </section>
+    <section class="center">
+      <div id="clock">⚔️</div>
+      <div id="phase">Đang kết nối…</div>
+      <div id="tug"><i id="tugT"></i><span class="vs">VS</span></div>
+      <div id="pot" hidden></div>
+      <div id="lastGift" hidden></div>
+    </section>
+    <div class="giftLegend trai" id="gl_trai"></div>
+    <div class="giftLegend gai" id="gl_gai"></div>
+    <section class="team gai" id="t_gai">
+      <div class="th"><span class="ic">👰</span><div class="tnw"><b class="tn">NHÀ GÁI</b><small class="cmd">💬 Bình luận <b>2</b></small></div><div class="score"><b>0</b><small>xu</small></div></div>
+      <div class="units"></div>
+      <div class="bars"><div class="bar gate"><i></i><span></span></div><div class="bar house"><i></i><span></span></div></div>
+      <ol class="top"></ol>
+    </section>
+  </header>
+
+  <div id="banner" hidden></div>
+  <div id="bossBanner" hidden></div>
+  <div id="result" hidden></div>
+  <div id="board" hidden></div>
+
+  <footer id="hudBottom">
+    <ul id="feed"></ul>
+    <div id="howto">Bình luận <b>1</b> vào 🤵 Nhà Trai · <b>2</b> vào 👰 Nhà Gái · Quà 1 · 5 · 10 · 30 · 100 · 500 xu ra 🥢 🏹 🛡️ 🚜 🐃 🐘</div>
+  </footer>
+
+  <div id="tools">
+    <span class="pill" id="livePill">⚪</span>
+    <button class="pill" id="boardBtn" title="Bảng xếp hạng lực chiến tháng">🏆 BXH</button>
+    <button class="pill go" id="goBtn" title="Bấm lúc nào cũng được: bỏ qua chờ, đếm ngược và Tập hợp, xuất quân ngay">⚔️ BẮT ĐẦU</button>
+    <button class="pill" id="camReset" title="Camera đạo diễn">↺</button>
+    <button class="pill" id="musicBtn" title="Trống trận">🥁</button>
+    <button class="pill" id="soundBtn" title="Âm thanh">🔈</button>
+    <span class="pill" id="fps"></span>
+  </div>
+
+  <div id="camPad" title="Giữ nút để camera chạy · con lăn chuột: nghiêng · Ctrl + con lăn: zoom">
+    <button data-hold="tiltUp" title="Ngẩng camera (PageUp)">⤒</button><button data-hold="up" title="Lên (↑)">▲</button><button data-hold="zoomIn" title="Phóng to (+)">＋</button>
+    <button data-hold="left" title="Sang trái (←)">◀</button><button id="camPadReset" title="Về camera đạo diễn">🎬</button><button data-hold="right" title="Sang phải (→)">▶</button>
+    <button data-hold="tiltDown" title="Cúi camera (PageDown)">⤓</button><button data-hold="down" title="Xuống (↓)">▼</button><button data-hold="zoomOut" title="Thu nhỏ (−)">－</button>
+    <button data-hold="rotL" title="Xoay trái (Q)">⟲</button><span></span><button data-hold="rotR" title="Xoay phải (E)">⟳</button>
+  </div>
+  <div id="ctl" hidden>
+    <button id="ctlToggle">🧪 Gift Simulator · Điều khiển</button>
+    <div id="ctlBody" class="panel"></div>
+  </div>
+  <div id="offline" hidden>Mất kết nối server, đang thử lại…</div>
+</div>
+<script src="chien.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{
+  "textures": {
+    "grass": {
+      "map": "hd/tex/grass_map.jpg",
+      "normal": "hd/tex/grass_normal.jpg",
+      "rough": "hd/tex/grass_rough.jpg",
+      "ao": "hd/tex/grass_ao.jpg"
+    },
+    "drygrass": {
+      "map": "hd/tex/drygrass_map.jpg",
+      "normal": "hd/tex/drygrass_normal.jpg",
+      "rough": "hd/tex/drygrass_rough.jpg",
+      "ao": "hd/tex/drygrass_ao.jpg"
+    },
+    "dirt": {
+      "map": "hd/tex/dirt_map.jpg",
+      "normal": "hd/tex/dirt_normal.jpg",
+      "rough": "hd/tex/dirt_rough.jpg",
+      "ao": "hd/tex/dirt_ao.jpg"
+    },
+    "rock": {
+      "map": "hd/tex/rock_map.jpg",
+      "normal": "hd/tex/rock_normal.jpg",
+      "rough": "hd/tex/rock_rough.jpg",
+      "ao": "hd/tex/rock_ao.jpg"
+    },
+    "sand": {
+      "map": "hd/tex/sand_map.jpg",
+      "normal": "hd/tex/sand_normal.jpg",
+      "rough": "hd/tex/sand_rough.jpg",
+      "ao": "hd/tex/sand_ao.jpg"
+    },
+    "courtyard": {
+      "map": "hd/tex/courtyard_map.jpg",
+      "normal": "hd/tex/courtyard_normal.jpg",
+      "rough": "hd/tex/courtyard_rough.jpg",
+      "ao": "hd/tex/courtyard_ao.jpg"
+    },
+    "carpet": {
+      "map": "hd/tex/carpet_map.jpg",
+      "normal": "hd/tex/carpet_normal.jpg",
+      "rough": "hd/tex/carpet_rough.jpg",
+      "ao": "hd/tex/carpet_ao.jpg"
+    },
+    "roof": {
+      "map": "hd/tex/roof_map.jpg",
+      "normal": "hd/tex/roof_normal.jpg",
+      "rough": "hd/tex/roof_rough.jpg",
+      "ao": "hd/tex/roof_ao.jpg"
+    },
+    "plaster": {
+      "map": "hd/tex/plaster_map.jpg",
+      "normal": "hd/tex/plaster_normal.jpg",
+      "rough": "hd/tex/plaster_rough.jpg",
+      "ao": "hd/tex/plaster_ao.jpg"
+    },
+    "wood": {
+      "map": "hd/tex/wood_map.jpg",
+      "normal": "hd/tex/wood_normal.jpg",
+      "rough": "hd/tex/wood_rough.jpg",
+      "ao": "hd/tex/wood_ao.jpg"
+    },
+    "column": {
+      "map": "hd/tex/column_map.jpg",
+      "normal": "hd/tex/column_normal.jpg",
+      "rough": "hd/tex/column_rough.jpg",
+      "ao": "hd/tex/column_ao.jpg"
+    },
+    "stone": {
+      "map": "hd/tex/stone_map.jpg",
+      "normal": "hd/tex/stone_normal.jpg",
+      "rough": "hd/tex/stone_rough.jpg",
+      "ao": "hd/tex/stone_ao.jpg"
+    },
+    "brick": {
+      "map": "hd/tex/brick_map.jpg",
+      "normal": "hd/tex/brick_normal.jpg",
+      "rough": "hd/tex/brick_rough.jpg",
+      "ao": "hd/tex/brick_ao.jpg"
+    },
+    "bark": {
+      "map": "hd/tex/bark_map.jpg",
+      "normal": "hd/tex/bark_normal.jpg",
+      "rough": "hd/tex/bark_rough.jpg",
+      "ao": "hd/tex/bark_ao.jpg"
+    }
+  },
+  "hdri": "hd/hdri/sky.hdr",
+  "models": {
+    "shrub1": "hd/models/shrub1.glb",
+    "shrub2": "hd/models/shrub2.glb",
+    "grass": "hd/models/grass.glb",
+    "fern": "hd/models/fern.glb",
+    "boulder1": "hd/models/boulder1.glb",
+    "boulder2": "hd/models/boulder2.glb",
+    "rocks": "hd/models/rocks.glb"
+  },
+  "credit": "Poly Haven (CC0) – https://polyhaven.com",
+  "foliage": {
+    "tree1": {
+      "bark_map": "hd/tex/tree1_bark_map.jpg",
+      "bark_normal": "hd/tex/tree1_bark_normal.jpg",
+      "leaves_map": "hd/tex/tree1_leaves_map.jpg",
+      "leaves_normal": "hd/tex/tree1_leaves_normal.jpg",
+      "branch_map": "hd/tex/tree1_branch_map.jpg",
+      "branch_normal": "hd/tex/tree1_branch_normal.jpg"
+    },
+    "tree2": {
+      "bark_map": "hd/tex/tree2_bark_map.jpg",
+      "bark_normal": "hd/tex/tree2_bark_normal.jpg",
+      "leaves_map": "hd/tex/tree2_leaves_map.jpg",
+      "leaves_normal": "hd/tex/tree2_leaves_normal.jpg",
+      "branch_map": "hd/tex/tree2_branch_map.jpg",
+      "branch_normal": "hd/tex/tree2_branch_normal.jpg"
+    },
+    "tree3": {
+      "bark_map": "hd/tex/tree3_bark_map.jpg",
+      "bark_normal": "hd/tex/tree3_bark_normal.jpg",
+      "leaves_map": "hd/tex/tree3_leaves_map.jpg",
+      "leaves_normal": "hd/tex/tree3_leaves_normal.jpg",
+      "branch_map": "hd/tex/tree3_branch_map.jpg",
+      "branch_normal": "hd/tex/tree3_branch_normal.jpg"
+    }
+  }
+}

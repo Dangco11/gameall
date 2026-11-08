@@ -1,0 +1,10 @@
+# Tạo tự động bởi tools/make-drinks.ts. Xoá tên file khỏi danh sách này nếu đã thay bằng model tự làm.
+bluelagoon.glb
+cam.glb
+champagne.glb
+cola.glb
+mocktaildau.glb
+mojito.glb
+sodachanh.glb
+sunrise.glb
+tradao.glb

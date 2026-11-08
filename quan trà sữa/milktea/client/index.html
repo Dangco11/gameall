@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quán Trà Sữa Liên Quân</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/css/game.css">
+<script type="importmap">
+{ "imports": { "three": "/vendor/three/three.module.js", "three/addons/": "/vendor/three/addons/" } }
+</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="labels"></canvas>
+
+<header class="top">
+  <div class="brand">
+    <span class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M38 4 32 22" stroke="#ff5f8f" stroke-width="5" stroke-linecap="round"/><path d="M14 22h36l-4 34a6 6 0 0 1-6 5H24a6 6 0 0 1-6-5z" fill="#d9a46f"/><path d="M15.6 34h32.8l-.6 6H16.3z" fill="#f3d3ad"/><circle cx="25" cy="52" r="3.4" fill="#3a2416"/><circle cx="32" cy="54" r="3.4" fill="#3a2416"/><circle cx="39" cy="52" r="3.4" fill="#3a2416"/><path d="M11 22c0-7 9-11 21-11s21 4 21 11z" fill="#fff" opacity=".9"/></svg></span>
+    <div><b id="brandName">Quán Trà Sữa Liên Quân</b><small id="tagline">Quán trà sữa của người xem</small></div>
+  </div>
+  <div class="chips">
+    <span id="live" class="live off">Chưa kết nối</span>
+    <span class="chip">👥 <b id="stInRoom">0</b><small id="stSeated">0 ghế</small></span>
+    <span class="chip">🧾 <b id="stQueue">0</b><small>đơn chờ</small></span>
+    <span class="chip">💰 <b id="stSales">0</b><small>xu hôm nay</small></span>
+  </div>
+</header>
+
+<aside class="panel vip">
+  <h2>🏆 <span id="topTitle">Top tháng</span></h2>
+  <ol id="vipList"></ol>
+</aside>
+
+<div class="rightcol">
+  <aside class="panel orders">
+    <h2>🧾 Đơn hàng <span id="orderCount" class="count">0</span></h2>
+    <div id="orderList"></div>
+  </aside>
+  <aside class="panel prices">
+    <h2>🎁 Bảng giá quà</h2>
+    <ol id="priceList"></ol>
+  </aside>
+</div>
+
+<section class="menu">
+  <div class="joinhint"><b>💬 Bình luận hoặc ❤️ thả tim để vào quán</b><span>Gõ “bàn 5” ngồi cùng bạn · gõ nam, nữ, già, trẻ để đổi dáng</span></div>
+  <div class="menu-head"><b>Menu</b><span id="menuGroup"></span></div>
+  <div id="menuGrid" class="grid"></div>
+</section>
+
+<!-- Tivi ở quầy: chừa ô cho camera quay mặt chủ live. Trong LIVE Studio đặt nguồn camera đè lên ô này, hoặc mở ?cam=1 để tivi tự chiếu webcam -->
+<div id="tv" class="tv">
+  <div class="tv-screen"><video id="tvCam" autoplay muted playsinline hidden></video><span id="tvHint" class="tv-hint">📷 Camera</span><span class="tv-live">● LIVE</span></div>
+  <i class="tv-stand"></i>
+</div>
+
+<div id="ticker" class="ticker"></div>
+<div id="banner" class="banner"></div>
+<div id="guest" class="guest"></div>
+<button id="sound" class="sound" hidden>🔊 Bấm để bật tiếng</button>
+<div id="conn" class="conn" hidden>Đang kết nối lại server…</div>
+
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>

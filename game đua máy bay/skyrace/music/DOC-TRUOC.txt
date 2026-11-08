@@ -1,0 +1,7 @@
+NHẠC NỀN RIÊNG (tùy chọn)
+Game đã có sẵn nhạc nền CC0 theo từng giai đoạn trong public/bgm/ (chuẩn bị, đang đua, chặng cuối, vinh danh).
+Muốn dùng nhạc của bạn lúc ĐANG ĐUA: thả file .mp3 / .m4a / .ogg / .mp4 vào thư mục này rồi tải lại trang.
+Game phát lần lượt, lặp lại hết danh sách. Nhạc chuẩn bị, chặng cuối, vinh danh vẫn dùng nhạc có sẵn
+(muốn đổi thì chép file cùng tên đè lên trong public/bgm/).
+Nhạc tự nhỏ lại khi bình luận viên đang nói. Nút 🎵 trên trang điều khiển để tắt / bật.
+Chỉ dùng nhạc bạn có quyền phát trên live.

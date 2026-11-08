@@ -1,0 +1,47 @@
+NHÂN VẬT 3D NHƯ THẬT CHO QUÁN BAR ONLINE
+
+ĐÃ CÓ SẴN (12 nhân vật, chuyển từ Microsoft Rocketbox, giấy phép MIT, xem LICENSE-Rocketbox.txt):
+  khach-nam-1..6   khách nam              khach-nu-1..5   khách nữ
+  bao-ve.glb       bảo vệ ở cửa và ở cổng khu VIP
+  Mỗi file có sẵn động tác: thở, đi bộ, vỗ tay, ăn mừng, vẫy chào, uống, ba điệu nhảy.
+Muốn thay ai thì ghi đè file cùng tên bằng model khác. Thả file .glb (hoặc .vrm) vào thư mục này rồi tải lại trang
+(không cần mở lại server). ?nomodel trên đường dẫn để tạm tắt hết người 3D.
+
+TÊN FILE
+  khach-nam-*.glb, khach-nu-*.glb          khách nam, khách nữ (càng nhiều file càng đa dạng; mỗi người xem luôn giữ đúng một mẫu)
+  khach-*.glb                              khách chung, dùng khi thiếu mẫu nam / nữ riêng
+  dong-tac*.glb                            thư viện động tác dùng chung (ví dụ tải từ Mixamo)
+  Trang phục khách được tô lại thành đồ đi chơi đêm theo từng người (da, tóc, mặt giữ nguyên).
+  Nhân viên quán mượn mẫu khách rồi mặc đồng phục. Muốn mẫu riêng (không tô lại đồ) thì thả thêm file đặt tên như sau:
+    bartender-nam.glb, bartender-nu.glb      bartender
+    dj-nam.glb, dj-nu.glb                    DJ (game tự đeo thêm tai nghe)
+    phuc-vu.glb, phuc-vu-2.glb               phục vụ (game tự đưa khay)
+    bao-ve.glb, bao-ve-2.glb                 bảo vệ
+    le-tan.glb                               lễ tân đứng ngoài cửa
+    khach-vip-*.glb                          khách VIP
+
+FILE CẦN GÌ
+  - Có khung xương (rig). Game tự nhận khung xương của Mixamo, MakeHuman / MPFB2, Character Creator / ActorCore,
+    VRoid, Rigify, Rocketbox. Tư thế chữ T hay chữ A đều được; chiều cao, hướng mặt game tự chỉnh.
+  - Nên đặt tên vật liệu có chữ hair / skin / dress / suit để game tự chỉnh da, tóc, vải cho đẹp hơn.
+  - Mỗi file dưới khoảng 20-30 MB, ảnh tối đa 2048x2048, mỗi mẫu nên dưới khoảng 30.000 tam giác.
+
+ĐỘNG TÁC
+  Động tác có sẵn trong file được tự phát theo tên (không phân biệt hoa thường): idle / breathing, walk, clap,
+  cheer / celebrate, wave / greet, drink / sip, dance.
+  Pha chế, lắc shaker, rót, lau quầy, xếp chai, bê khay, chơi DJ, chụp ảnh, khoanh tay, ngồi do game tự điều khiển khớp;
+  có trong file thì càng tự nhiên, đặt tên động tác có chữ: shake, pour, wipe, shelf, serve, tray, dj, phone / selfie,
+  arms crossed.
+
+100 ĐIỆU NHẢY
+  Cả 100 điệu (xem README, mục "100 điệu nhảy") dựng bằng code trên khung xương có sẵn, không cần file thêm.
+  Muốn dùng động tác quay thật (mocap) cho điệu nào: thêm vào dong-tac*.glb một động tác đặt tên đúng tên điệu,
+  vd. "Renegade", "Floss", "Running Man Shuffle" (không phân biệt hoa thường, dấu cách): game tự dùng bản quay thật.
+  Các động tác sát sàn (windmill, headspin, flare) chỉ có được bằng mocap.
+
+TÌM HOẶC TẠO NHÂN VẬT
+  - Mua model có rig: CGTrader, TurboSquid, Sketchfab Store. Miễn phí: Sketchfab (lọc Downloadable, đọc kỹ giấy phép),
+    Blender + MPFB2 (CC0). Chất lượng cao: Character Creator 4, xuất FBX rồi chuyển GLB bằng Blender.
+  - Kiểm tra giấy phép cho phép dùng trong live stream / thương mại. Không dùng khuôn mặt người thật khi chưa được đồng ý.
+
+File .glb trong thư mục này không được đưa lên git.

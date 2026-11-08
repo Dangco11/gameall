@@ -1,0 +1,20 @@
+NGUỒN ÂM THANH HIỆU ỨNG (tất cả giấy phép CC0 – Public Domain: dùng tự do, kể cả livestream / thương mại, không bắt buộc ghi nguồn)
+
+Kenney – Sci-Fi Sounds (www.kenney.nl, https://opengameart.org/content/sci-fi-sounds)
+  bomb-low.ogg      ← lowFrequency_explosion_000.ogg
+  boom-0..4.ogg     ← explosionCrunch_000..004.ogg
+  thrust-0..4.ogg   ← thrusterFire_000..004.ogg
+  engine-loop.ogg   ← spaceEngineLow_001.ogg
+  shield.ogg        ← forceField_001.ogg
+  zap.ogg           ← laserLarge_002.ogg
+Kenney – Interface Sounds (https://opengameart.org/content/interface-sounds)
+  coin.ogg ← confirmation_001 · coin-big.ogg ← maximize_006 · go.ogg ← confirmation_004 · ring.ogg ← glass_002
+rubberduck – 50 CC0 Sci-Fi SFX (https://opengameart.org/content/50-cc0-sci-fi-sfx)
+  launch.ogg ← rocket_01.ogg · warp.ogg ← teleport_01.ogg
+Boost or launch or thruster sound effect (https://opengameart.org/content/boost-or-launch-or-thruster-sound-effect)
+  boost.ogg ← boost.mp3
+Synthesized explosion (https://opengameart.org/content/synthesized-explosion)
+  bomb-crack.ogg ← synthetic_explosion_1.flac
+
+Đã đổi sang mono, chuẩn hoá âm lượng (loudnorm). Thay file cùng tên để dùng âm thanh khác.
+Thiếu file nào thì game tự dùng lại tiếng tổng hợp bằng WebAudio.

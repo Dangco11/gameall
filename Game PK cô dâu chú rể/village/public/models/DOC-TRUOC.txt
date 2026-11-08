@@ -1,0 +1,26 @@
+MODEL 3D CHO ĐẠI CHIẾN (tùy chọn)
+
+Đặt file .glb vào thư mục này, đặt tên theo loại quân:
+  danbinh.glb   Dân binh (1 xu)
+  xathu.glb     Xạ thủ (5 xu)
+  dausi.glb     Đấu sĩ (10 xu)
+  xechien.glb   Xe chiến (30 xu)
+  trau.glb      Kỵ binh trâu (100 xu)
+  voi.glb       Tượng binh voi (500 xu)
+
+Có file nào thì game dùng file đó, loại nào chưa có thì vẫn dùng model dựng sẵn. Tải lại trang là thấy.
+Có thể tạo model từ ảnh mẫu bằng công cụ AI tạo 3D (Meshy, Tripo...) rồi xuất .glb, hoặc dùng model đã mua.
+
+- Model có xương và hoạt ảnh: game tự tìm hoạt ảnh theo tên (idle, walk/run, attack, hit/hurt, death/die).
+  Tên khác thì khai trong models.json.
+- Model tĩnh (không xương): game tự cho nhún khi đi, lao tới khi đánh, ngã khi chết.
+- Game tự chỉnh cỡ cho đứng trên mặt đất và cao đúng tỉ lệ. Model phải nhìn theo chiều +Z (chuẩn glTF),
+  nếu quay ngược thì đặt rotY: 180.
+- Vật liệu có tên chứa "team" sẽ được tô màu phe (xanh Nhà Trai, hồng Nhà Gái).
+- Nên giữ mỗi model dưới khoảng 20.000 tam giác để 300 quân vẫn chạy mượt.
+
+Ví dụ models.json (không bắt buộc):
+{
+  "voi": { "file": "elephant.glb", "height": 4.9, "rotY": 180, "clips": { "walk": "Walking", "attack": "Attack_1" } },
+  "trau": { "height": 3.0, "teamMaterial": "Saddle" }
+}

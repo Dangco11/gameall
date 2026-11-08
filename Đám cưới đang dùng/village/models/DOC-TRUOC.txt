@@ -1,0 +1,48 @@
+NHÂN VẬT 3D NHƯ THẬT CHO ĐÁM CƯỚI
+
+ĐÃ CÓ SẴN (17 nhân vật, chuyển từ Microsoft Rocketbox, giấy phép MIT, xem LICENSE-Rocketbox.txt):
+  codau.glb       cô dâu váy cưới trắng ren, voan dài, vương miện, vòng ngọc trai
+  chure.glb       chú rể vest đen, sơ mi trắng, cà vạt, hoa hồng cài ngực
+  khach-nam-1..6  khách nam vest, sơ mi       khach-nu-1..5  khách nữ vest, váy, áo dự tiệc
+  khach-gia-1     người lớn tuổi              khach-tre-1..3 trẻ con
+  Mỗi file có sẵn động tác: thở, đi bộ, vỗ tay, ăn mừng, vẫy chào, uống, ba điệu nhảy.
+Muốn thay ai thì ghi đè file cùng tên bằng model khác (xem bên dưới). Xoá file thì người đó về dạng cũ.
+
+Thả file .glb (hoặc .vrm) vào thư mục này rồi tải lại trang overlay (không cần mở lại server):
+  codau.glb            cô dâu
+  chure.glb            chú rể
+  khach-nam-1.glb, khach-nam-2.glb ...    khách nam (vest, sơ mi, áo dài nam...)
+  khach-nu-1.glb,  khach-nu-2.glb  ...    khách nữ (áo dài, váy dự tiệc...)
+  khach-gia-1.glb ...                      người lớn tuổi (áo dài, khăn đóng truyền thống)
+  khach-tre-1.glb ...                      trẻ con (không có thì trẻ con vẫn là người chibi)
+  khach-1.glb ...                          khách chung, dùng khi thiếu mẫu nam / nữ riêng
+  dong-tac.glb, dong-tac-nhay.glb ...      thư viện động tác dùng chung (xem mục Động tác)
+Càng nhiều file khách thì đám đông càng đa dạng. Mỗi người xem luôn giữ đúng một mẫu, chiều cao lệch nhau vài phân.
+Tối đa 50 khách dùng người 3D (còn lại là chibi); đổi bằng ?khach=30 trên đường dẫn. ?nomodel để tạm tắt hết.
+Không có file thì cô dâu chú rể là người áo dài dựng sẵn bằng code, khách là người chibi như cũ.
+
+FILE CẦN GÌ
+  - Có khung xương (rig). Game tự nhận khung xương của Mixamo, MakeHuman / MPFB2, Character Creator / ActorCore,
+    VRoid, Rigify. Tư thế chữ T hay chữ A đều được; chiều cao, hướng mặt game tự chỉnh.
+  - Nên đặt tên vật liệu có chữ hair / skin / veil / lace / dress / suit để game tự chỉnh da, tóc, voan, vải cho đẹp hơn.
+  - Mỗi file dưới khoảng 20-30 MB, ảnh tối đa 2048x2048. 50 khách cùng lúc thì mỗi mẫu nên dưới khoảng 30.000 tam giác.
+
+ĐỘNG TÁC
+  Động tác có sẵn trong file được tự phát theo tên (không phân biệt hoa thường):
+    idle / breathing / standing     đứng, thở          walk                      đi bộ
+    clap / applause                 vỗ tay             cheer / celebrate / victory   ăn mừng
+    wave / greet / hello            chào khách         bow                       cúi chào
+    dance / samba / salsa / hip hop / swing ...        nhảy trên sàn nhảy
+  Động tác nào thiếu thì game tự điều khiển khớp như cũ (ngồi ăn, nâng ly, cắt bánh, xoay, trồng cây chuối, PK cướp dâu...).
+  Cách nhanh: tải nhân vật lên mixamo.com (miễn phí, tài khoản Adobe), chọn các động tác trên, tải FBX "Without Skin"
+  cho từng động tác, gộp trong Blender rồi xuất thành dong-tac.glb. Mọi nhân vật dùng khung xương Mixamo sẽ dùng chung.
+
+TÌM HOẶC TẠO NHÂN VẬT NHƯ THẬT
+  - Mua model có sẵn (váy cưới, vest, áo dài): 3dmodels.org, CGTrader, TurboSquid, Sketchfab Store. Chọn loại có rig.
+  - Miễn phí: Sketchfab (lọc Downloadable, đọc kỹ giấy phép CC-BY / CC0); Blender + MPFB2 (CC0) tự tạo người rồi may đồ.
+  - Chất lượng cao nhất: Character Creator 4 (Reallusion) dựng người như thật, quần áo, tóc; xuất FBX rồi chuyển GLB bằng Blender.
+  Đổi FBX sang GLB: mở Blender, File > Import > FBX, rồi File > Export > glTF 2.0 (.glb).
+  Kiểm tra giấy phép cho phép dùng trong live stream / thương mại.
+  Không dùng khuôn mặt người thật khi chưa được chính họ đồng ý.
+
+File trong thư mục này không được đưa lên git.

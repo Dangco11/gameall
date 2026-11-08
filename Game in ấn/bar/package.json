@@ -1,0 +1,29 @@
+{
+  "name": "live-print-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Live Print Studio: máy in 3D cho TikTok LIVE (quà tặng → bản in cá nhân hoá)",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "esbuild src/client/print/main.ts --bundle --minify --sourcemap --target=es2020 --outfile=public/print.js --log-level=warning",
+    "start": "npm run build && node src/server/main.ts",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "msedge-tts": "2.1.1",
+    "three": "0.170.0",
+    "tiktok-live-connector": "2.5.0",
+    "ws": "8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.0",
+    "@types/three": "0.170.0",
+    "@types/ws": "8.18.1",
+    "esbuild": "0.24.2",
+    "typescript": "5.8.3"
+  }
+}

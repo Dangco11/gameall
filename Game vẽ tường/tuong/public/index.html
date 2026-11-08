@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bức Tường Graffiti</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff2d55'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle'%3E%F0%9F%8E%A8%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="scene"></canvas>
+<div id="app">
+  <header id="top">
+    <div class="brand"><span class="logo">🎨</span><div><b>BỨC TƯỜNG GRAFFITI</b><small id="status">Tặng quà để được vẽ lên tường</small></div></div>
+    <div class="pills"><span class="pill" id="viewers">👥 0</span><span class="pill" id="live">Chưa nối TikTok</span>
+      <button class="pill btn" id="musicBtn" title="Nhạc nền">🎵</button><button class="pill btn" id="soundBtn" title="Âm thanh">🔈</button></div>
+  </header>
+  <div id="recent"></div>
+  <div id="likes"><b>❤️ <span id="likeN">0</span>/20</b><small>TIM</small></div>
+  <div id="legL" class="legend"></div>
+  <div id="legR" class="legend"></div>
+  <div id="board"></div>
+  <div id="banners"></div>
+  <div id="center" hidden></div>
+  <div id="joins"></div>
+  <div id="lucky" hidden></div>
+  <div id="goal"><div class="fill" id="goalFill"></div><div class="txt">❤️ <b>MỤC TIÊU TIM <span id="goalLv">1</span></b> <span id="goalN">0/300</span> <small>→ 💖 Phi đội trái tim vẽ người thả tim nhiều nhất</small></div></div>
+  <div id="howto">Bình luận = <b>xịt tên</b> lên tường · Gõ màu: <i>do cam vang xanh tim hong</i> · <b>20 tim</b> = 1 bom sơn · Tặng quà = chân dung có cánh, máy bay, rồng</div>
+  <div id="offline" hidden>Mất kết nối server, đang thử lại…</div>
+  <div id="unlock" hidden>🔈 Bấm vào màn hình để bật âm thanh</div>
+  <div id="sim" hidden>
+    <button id="simToggle" class="simToggle">🧪 Điều khiển &amp; thử</button>
+    <div id="simBody" class="panel">
+      <div class="sec"><b>TikTok LIVE</b>
+        <div class="r"><input id="ttUser" placeholder="username TikTok"><button id="ttConnect" class="pri">Kết nối</button><button id="ttDisconnect">Ngắt</button></div></div>
+      <div class="sec"><b>Người thử</b>
+        <div class="r"><select id="simWho"></select><button id="simLike">❤ x20</button><button id="simTag">✍️ Bình luận</button></div>
+        <div class="r"><input id="simText" placeholder="bình luận: hi, do, xanh, tim…"><button id="simSend">Gửi</button></div></div>
+      <div class="sec"><b>Tặng quà</b><div class="r wrap" id="simGifts"></div></div>
+      <div class="sec"><b>Tường</b><div class="r"><label><input type="checkbox" id="setVoice"> Giọng bình luận</label><button id="wipe">🧽 Rửa tường</button><button id="clearSim">Xoá người thử</button></div>
+        <div class="r"><a href="/?live=1" id="openLive">📺 Mở cửa sổ LIVE 9:16</a></div></div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

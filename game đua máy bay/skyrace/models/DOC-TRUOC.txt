@@ -1,0 +1,28 @@
+MÁY BAY 3D TỪ FILE GLB (không bắt buộc)
+
+Game đã có sẵn 10 mẫu máy bay dựng bằng code (xem /hangar.html). Muốn dùng model GLB chất lượng cao hơn cho loại nào
+thì thả file .glb vào thư mục này rồi tải lại trang (không cần mở lại server). Tên file là loại máy bay hoặc từ khoá:
+  racer.glb       máy bay đua            (hoặc dua.glb, race.glb)
+  fighter.glb     tiêm kích              (hoặc f16.glb, f22.glb, mig.glb)
+  airliner.glb    máy bay chở khách      (hoặc boeing.glb, airbus.glb, 737.glb)
+  prop.glb        cánh quạt cổ điển      (hoặc cessna.glb, spitfire.glb)
+  supersonic.glb  siêu thanh             (hoặc concorde.glb)
+  bizjet.glb      phản lực tư nhân       (hoặc gulfstream.glb)
+  transport.glb   vận tải quân sự        (hoặc c130.glb, hercules.glb)
+  stunt.glb       nhào lộn               (hoặc extra.glb)
+  future.glb      máy bay tương lai
+  golden.glb      máy bay VIP mạ vàng (chỉ xuất hiện khi tặng quà 999 xu)
+
+Game tự làm:
+  - Chỉnh kích thước cho đúng tỉ lệ với các máy bay khác, đặt tâm máy bay vào giữa.
+  - Đoán hướng mũi theo trục dài nhất. Sai hướng thì tạo models.json, ví dụ:
+        { "fighter.glb": { "turn": 180 }, "airliner.glb": { "turn": 90, "scale": 1.1 } }
+    turn: xoay bao nhiêu độ quanh trục đứng; scale: phóng to / thu nhỏ thêm.
+  - Sơn màu người chơi lên các vật liệu có tên chứa paint / body / livery / fuselage / color. Vật liệu khác giữ nguyên texture gốc.
+  - Node tên prop / propeller / rotor / fan / blade sẽ quay theo ga động cơ.
+  - Động tác có sẵn trong file (idle, fly...) được phát bằng AnimationMixer.
+  - Máy bay ở xa vẫn dùng bản dựng bằng code đơn giản cho nhẹ (LOD). Lửa phản lực, đèn tín hiệu, nhào lộn vẫn hoạt động.
+  - File lỗi hoặc không đọc được thì tự dùng lại máy bay dựng bằng code, game không bị hỏng.
+
+Nên dùng file dưới ~20 MB, texture tối đa 2048 x 2048, dưới ~50.000 tam giác mỗi chiếc (60 máy bay cùng lúc).
+Chỉ dùng model bạn có quyền sử dụng trên live (ví dụ model giấy phép CC0 / CC-BY, ghi nguồn nếu giấy phép yêu cầu).

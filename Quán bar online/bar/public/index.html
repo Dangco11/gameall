@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bar Online</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312061e'/%3E%3Cpath d='M14 14h36L32 36z' fill='%23ff3ab0'/%3E%3Crect x='30' y='34' width='4' height='14' fill='%23ffc860'/%3E%3Crect x='22' y='48' width='20' height='4' rx='2' fill='%23ffc860'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="bar.css">
+</head>
+<body class="bar">
+<div id="app">
+  <canvas id="scene"></canvas>
+  <div id="tags"></div>
+  <div id="hearts"></div>
+
+  <header id="top">
+    <div class="brand"><span class="logo">🍸</span><div><b>BAR ONLINE</b><small>Luxury Nightclub · gõ "nhảy" để quẩy</small></div></div>
+    <div class="pills">
+      <span class="pill" id="online">0 khách đang xem</span>
+      <span class="pill" id="liveStatus">Chưa kết nối</span>
+      <button class="pill btn" id="liveBtn" title="Mở màn hình LIVE 9:16 (cửa sổ riêng để TikTok LIVE Studio chụp)">📺 Mở màn 9:16</button>
+      <button class="pill btn" id="musicBtn" title="Nhạc">🎵</button>
+      <button class="pill btn" id="soundBtn" title="Âm thanh">🔈</button>
+    </div>
+  </header>
+
+  <div id="showBar" hidden></div>
+  <div id="battleBox" class="panel" hidden></div>
+  <div id="banner" hidden></div>
+  <aside id="menu" class="panel"></aside>
+  <aside id="gifts" class="panel"></aside>
+  <aside id="vipTop" class="panel"></aside>
+  <aside id="orders" class="panel"></aside>
+  <ul id="feed"></ul>
+
+  <div id="sim" hidden>
+    <button id="simToggle" class="simToggle">🧪 Bảng thử</button>
+    <div id="simBody" class="panel"></div>
+  </div>
+  <button id="musicHint" hidden>🎵 Bấm để bật nhạc và âm thanh</button>
+  <div id="loading">Đang dựng quán và nạp nhân vật 3D…</div>
+  <div id="fairNote">Trò chơi giải trí · Quà tặng là tự nguyện, không đổi ra tiền hay phần thưởng · Khách trong quán là người xem thật trong live</div>
+  <div id="offline" hidden>Mất kết nối server, đang thử lại…</div>
+</div>
+<script src="bar.js"></script>
+</body>
+</html>
